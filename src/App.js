@@ -15,6 +15,8 @@ import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import theme from "./theme";
 import { ThemeProvider } from '@mui/material/styles';
+import Divider from '@mui/material/Divider';
+
 
 function Copyright() {
   return (
@@ -28,44 +30,41 @@ function Copyright() {
     </Typography>
   );
 }
-
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 export default function Album() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      
       <AppBar position="relative">
         <Toolbar>
           <Typography variant="h6" color="inherit" noWrap>
-            Album layout
+            PCCA
           </Typography>
         </Toolbar>
       </AppBar>
-      <main>
+      <main className="main">
         {/* Hero unit */}
-        <Box className="hero-bg"
-          sx={{
-            pt: 8,
-            pb: 6,
-            minHeight: "70vh",
-          }}
-        >
-          <Container maxWidth="sm">
+        <Container className="container">
+          <Stack className="stack hero" maxWidth="lg">
             <Typography
               component="h1"
               variant="h2"
               align="center"
               color="text.primary"
-              gutterBottom
             >
               Pacific Coastal Computing
             </Typography>
-            <Typography variant="h5" align="center" color="text.secondary" paragraph>
+            <Typography variant="h4" align="center" color="text.secondary" gutterBottom>
               Computing for Good
             </Typography>
-          </Container>
-        </Box>
+            <Typography className="blurb" variant="h5" align="center" color="text.secondary">
+              <Divider light={true} />
+              We bring the innovative spirit of the rugged coast to digital transformation through consulting services, capacity building, and interdisciplinary impact projects with community, industry and academic partners. 
+            </Typography>
+          </Stack>
+
         <Container sx={{ py: 8 }} maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={4}>
@@ -100,6 +99,8 @@ export default function Album() {
             ))}
           </Grid>
         </Container>
+      </Container>
+
       </main>
       {/* Footer */}
       <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">

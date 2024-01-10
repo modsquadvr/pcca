@@ -44,6 +44,7 @@ const typography = {
   h1: headerfont,
   h2: headerfont,
   h3: headerfont,
+  h4: headerfont,
   body1: basefont
 }
 
