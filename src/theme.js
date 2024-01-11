@@ -2,10 +2,12 @@ import { createTheme } from '@mui/material/styles';
 
 const palette = {
   primary: {
-    main: '#84A98C',
-    light: '##EFEBE6',
+    // main: '#84A98C',
+    //contrastText: '#52796F',
+    main: '#56606c',
+    light: '#EFEBE6',
     dark: '#354F52',
-    contrastText: '#52796F',
+    contrastText: 'rgb(239,235,230)'
   }, 
   secondary: {
     light: '#B48291',
@@ -15,6 +17,7 @@ const palette = {
   },
   background: {
     paper: '#EFEBE6',
+    shadow: '#56606c'
   },
 };
 
@@ -36,7 +39,7 @@ const basefont = {
 
 const headerfont = {
   fontFamily: [
-    '"Overlock SC"',
+    'Julius Sans One',
     basefont.fontFamily
   ].join(','),
 }
