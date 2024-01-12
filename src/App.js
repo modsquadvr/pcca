@@ -73,21 +73,22 @@ export default function App() {
         </Container>
 
         <Container sx={{m:0, w:1, maxWidth:1}} className="about-wrapper">
-          <Grid className="about" direction="row">
-            <Grid item xs={12} md={6}>
+          <Grid container className="about" direction="row">
+            <Grid item xs={12} md={6} align="right">
               <Box
                 component="img"
                 sx={{
                   // height: 233,
                   // width: 350,
                   maxHeight: { xs: 233, md: 400, lg: 500 },
-                  maxWidth: { xs: 233, md: 400, lg: 400 }
+                  maxWidth: { xs: 233, md: 400, lg: 400 },
+                  mr:0
                 }}
                 alt="The house from the offer."
                 src={ocean}
               />
             </Grid>
-            <Grid item xs={2} md={2}>
+            <Grid item xs={12} md={6}>
               <Box className="blurb">
                 <Typography variant="h4">
                       PCCA | About Us
