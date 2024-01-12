@@ -4,13 +4,13 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import { useTheme } from '@mui/material/styles';
+//import { useTheme } from '@mui/material/styles';
 
 import ocean from '../../../assets/photos/ocean.png';
 
 
 export default function About() {
-  const theme = useTheme();
+//  const theme = useTheme();
   return (
     <Container sx={{m:0, w:1, maxWidth:1}} className="infodump light about">
       <Grid container className="infodump-grid" direction="row">

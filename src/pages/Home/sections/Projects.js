@@ -1,12 +1,9 @@
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
-import { FadeRuleDark } from "../../../components/FadeRule";
 import eds from '../../../assets/photos/EDS-500x500.png';
 import steam from '../../../assets/photos/mocap-dance-combo-500x500.png'
 import bee from "../../../assets/photos/bee-500x500bw.png"

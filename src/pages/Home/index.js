@@ -48,6 +48,7 @@ function Hero() {
 }
 
 function Heart() {
+  // eslint-disable-next-line
   const theme = useTheme();
 
   return (
