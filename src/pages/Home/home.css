@@ -1,0 +1,118 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main .hero {
+  width:100%;
+
+}
+.hero .bg {
+  height:100%;
+  background: url("../../assets/photos/sunset.png") no-repeat center 20% fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  max-width:95%;
+  margin-bottom:2em;
+}
+
+.hero .title {
+  background: rgb(239,235,230);
+  background: linear-gradient(90deg, rgba(239,235,230,0) 0%, rgba(239,235,230,0.6) 20%, rgba(239,235,230,0.7) 50%, rgba(239,235,230,0.6) 80%, rgba(239,235,230,0.3) 90%, rgba(239,235,230,0) 100%);
+  height:100%;
+  max-width:100%;
+  min-height: 53vh;
+  margin: 0 auto;
+  padding: 4em;
+}
+
+
+.hero .title h1 {
+  font-size:4rem;
+}
+
+.hero .blurb {
+  max-width: 1200px;
+  color: rgb(239,235,230);
+  font-family: 'Fira Sans', 'Titillium Web', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', Arial, Helvetica, sans-serif;
+  font-weight:200;
+  font-style:italic;
+  font-size: 1.5rem;
+}
+
+
+.hero .blurb hr {
+  margin-bottom: 20px;
+}
+
+
+.infodump {
+  max-width: 100%!important;
+}
+
+.light {
+  background: rgb(239,235,230);
+  color: #282c34;
+}
+
+.infodump-dark {
+  color:rgb(239,235,230)
+}
+
+
+
+.infodump-grid {
+  padding: 4em;
+  margin: 0 auto;
+  font-size:1.2rem;
+  max-width:100%;
+}
+
+.infodump-grid .MuiGrid-item:nth-child(2) {
+  padding-left: 2em;
+}
+
+.services .card-content {
+  padding: 1.5em;
+  text-align: center;
+}
+.services {
+  
+}

@@ -10,15 +10,24 @@ const palette = {
     contrastText: 'rgb(239,235,230)'
   }, 
   secondary: {
-    light: '#B48291',
-    main: '#B48291',
-    dark: '#B48291',
-    contrastText: '#fff',
+    light: '#566c62',
+    main: '#566c62',
+    dark: '#566c62',
+    contrastText: '#EFEBE6',
+  },
+  light: {
+    light: '#EFEBE6',
+    main: '#EFEBE6',
+    dark: '#56606c',
+    contrastText: '#EFEBE6',
   },
   background: {
     paper: '#EFEBE6',
     shadow: '#56606c'
   },
+  error: {
+    main:"#B48291",
+  }
 };
 
 const basefont = {
@@ -48,7 +57,9 @@ const typography = {
   h2: headerfont,
   h3: headerfont,
   h4: headerfont,
-  body1: basefont
+  h5: headerfont,
+  body1: basefont,
+  fontSize: 18,
 }
 
 const theme = createTheme({

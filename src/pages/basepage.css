@@ -1,0 +1,9 @@
+
+.MuiAppBar-positionFixed {
+  height:60px;
+}
+
+header.MuiAppBar-root {
+  box-shadow:none;
+}
+

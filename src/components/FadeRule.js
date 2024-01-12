@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './faderule.css';
 
 
 export const FadeRuleDark = () => {

@@ -1,0 +1,20 @@
+/* TODO: make this actually dark (it's still light right now) */
+.fade-rule-dark {
+  height: 1px;
+  background-color: #E6E6E6;
+  /* width: 66.0em; */
+  margin: 0 auto;
+  margin-bottom: 2em;
+  background: rgb(86,96,108);
+  background: linear-gradient(90deg, rgba(86,96,108,0) 0%, rgba(86,96,108,0.6) 20%, rgba(86,96,108,0.7) 50%, rgba(86,96,108,0.6) 80%, rgba(86,96,108,0.3) 90%, rgba(86,96,108,0) 100%);
+ }
+
+.fade-rule-light {
+  height: 1px;
+  background-color: #E6E6E6;
+  /* width: 66.0em; */
+  margin: 0 auto;
+  margin-bottom: 2em;
+  background: rgb(239,235,230);
+  background: linear-gradient(90deg, rgba(239,235,230,0) 0%, rgba(239,235,230,0.6) 20%, rgba(239,235,230,0.7) 50%, rgba(239,235,230,0.6) 80%, rgba(239,235,230,0.3) 90%, rgba(239,235,230,0) 100%);
+ }
