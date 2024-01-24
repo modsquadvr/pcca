@@ -1,4 +1,3 @@
-import "./home.css"
 import flower from '../../assets/photos/flower.png';
 import * as React from 'react';
 import Box from '@mui/material/Box';
@@ -9,6 +8,7 @@ import Container from '@mui/material/Container';
 import { FadeRuleLight } from "../../components/FadeRule";
 import { useTheme } from '@mui/material/styles';
 import BasePage from "../BasePage"
+import "./home.css"
 
 // page sections
 import About from "./sections/About"
@@ -101,8 +101,7 @@ function Heart() {
 
 export default function Home() {
   return (
-      <BasePage hideHeader={false} hideFooter={false}>
-        <FadeRuleLight/>
+      <BasePage hideHeader={false} hideFooter={false} mode="dark">
         <Hero />
         <About />
         <Heart />

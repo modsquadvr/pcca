@@ -7,3 +7,9 @@ header.MuiAppBar-root {
   box-shadow:none;
 }
 
+
+.main {
+  min-height:100vh;
+  /* background:#56606c; */
+  background: #EFEBE6;
+} 

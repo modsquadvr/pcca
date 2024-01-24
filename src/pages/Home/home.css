@@ -36,7 +36,9 @@
     transform: rotate(360deg);
   }
 }
-
+.main-dark {
+  background:#56606c;
+} 
 .main .hero {
   width:100%;
 
