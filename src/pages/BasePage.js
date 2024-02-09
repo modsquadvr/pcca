@@ -72,9 +72,7 @@ function Copyright() {
 
 
 export default function BasePage(props) {
-  let mainClasses = "main" + (props.mode=="dark" ? " main-dark" : "");
-  console.log(mainClasses)
-
+  let mainClasses = "main" + (props.mode==="dark" ? " main-dark" : "");
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
