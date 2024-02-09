@@ -22,72 +22,89 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
-const expandedCard = (props) => {
-  return (
-    <CardContent>
-      <Typography paragraph dangerouslySetInnerHTML={{__html: props.fullText}}/>
-    </CardContent>
-  )
+
+const expandedCard = (proj) => {
+  // if the component does exist
+  if (typeof proj.component !== "undefined") {
+    return (React.createElement(proj.component)    )
+  } 
+  // if the component does not yet exist
+  return React.createElement(
+    () => <Typography paragraph>The component {proj.component} has not been created yet.</Typography>,
+    { key: proj.key }
+  );
 }
 
-
-
-const gridItemExpanded = {xs:12, sm: 12, md: 12, order:{xs:0}}
-const gridItemShrunk = {xs:12, sm:6, md: 4}
-//     <Grid item {...expanded ? {...gridItemExpanded} : {...gridItemShrunk}} >
-
-
-export default function CardModal(project) {
-  const [expanded, setExpanded] = React.useState(false);
-
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
-
-  let miniCard =       
+const miniCard = (proj) => {
+  return (
     <>
       <CardMedia
       component="img"
       height="194"
-      image={project.img}
-      alt={project.alt}
-    />
-    <CardContent sx={{ flexGrow: 1 }}>
-      <Typography gutterBottom variant="h5" component="h2" align="center">
-        {project.title}
-      </Typography>
-      <Typography variant="body2" color="text.secondary">
-        {project.blurb}
-      </Typography>
-    </CardContent>
-    </>;
+      image={proj.img}
+      alt={proj.alt}
+      />
+      <CardContent sx={{ flexGrow: 1 }}>
+        <Typography gutterBottom variant="h5" component="h2" align="center">
+          {proj.title}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          {proj.blurb}
+        </Typography>
+      </CardContent>
+    </>
+  )
+}
 
 
+export default function CardModal({project, ...props}) {
+  const handleExpandClick = () => {
+    if (project.expanded) { // if already expanded, hide
+      props.closeProject(project.key);
+    } else { // if not expanded, show
+      props.openProject(project.key);
+    }
+    
+  };      
 
-  return (
-    <Grid item {...expanded ? {order: 0} : ""}>
-      <Card
-        sx={{ height: '100%', display: 'flex', flexDirection: 'column'}}
-      >
-        <ExpandMore
-            expand={expanded}
-            onClick={handleExpandClick}
-            aria-expanded={expanded}
-            aria-label="show more"
-        >
-          {!expanded && miniCard}
-          <Collapse in={expanded}>
-          <CardContent>
-          {expanded && 
-            <Typography paragraph dangerouslySetInnerHTML={{__html: project.fullText}}/>
-          }
+  let GridItem = (project) => {
+    if (project.expanded) {
+      return (
+        <Grid item order={project.order} xs={12} sm={12} md={12}> 
+          <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column'}}>
+            <ExpandMore
+              expand={project.expanded}
+              onClick={handleExpandClick}
+              aria-expanded={project.expanded}
+              aria-label="show more"
+            >
+              <Collapse in={project.expanded}>
+                <CardContent>
+                  {expandedCard(project)}
+              </CardContent>
+              </Collapse>
+            </ExpandMore>
+        </Card>
+      </Grid>
+      )
+    }
+    return (
+      <Grid item order={project.order} xs={12} sm={6} md={4}> 
+        <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column'}}>
+          <ExpandMore
+              expand={project.expanded}
+              onClick={handleExpandClick}
+              aria-expanded={project.expanded}
+              aria-label="show more"
+            >
+          {miniCard(project)}
+          </ExpandMore>
 
-            </CardContent>
-            {/* {expanded && expandedCard } */}
-          </Collapse>
-        </ExpandMore>
-      </Card>
-    </Grid>
+        </Card>
+      </Grid>
+    )
+  }
 
-  );
+
+  return GridItem(project);
 }
