@@ -3,6 +3,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
+import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { FadeRuleLight } from "../../components/FadeRule";
@@ -20,7 +21,7 @@ function Hero() {
   return (
     <Container className="hero"  maxWidth="1">
       <Container className="bg">
-        <Container className="title" sx={{maxWidth:1}}>
+        <Stack className="title" sx={{maxWidth:1}} spacing={2} justifyContent="space-evenly">
           <Typography
             component="h1"
             variant="h2"
@@ -33,7 +34,7 @@ function Hero() {
             Computing for Good
           </Typography>
 
-        </Container>
+        </Stack>
       </Container>
       <FadeRuleLight/>
       <Container>
