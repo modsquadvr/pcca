@@ -57,6 +57,25 @@ const miniCard = (proj) => {
 }
 
 
+const card = (project) => {
+  if (project.expanded) {
+    return (
+      <Collapse in={project.expanded}>
+        <CardContent>
+          {expandedCard(project)}
+        </CardContent>
+      </Collapse>
+  
+    )
+  }
+  return (
+    miniCard(project)
+  )
+
+}
+
+
+
 export default function CardModal({project, ...props}) {
   const handleExpandClick = () => {
     if (project.expanded) { // if already expanded, hide
@@ -68,41 +87,22 @@ export default function CardModal({project, ...props}) {
   };      
 
   let GridItem = (project) => {
-    if (project.expanded) {
-      return (
-        <Grid item order={project.order} xs={12} sm={12} md={12}> 
-          <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column'}}>
-            <ExpandMore
-              expand={project.expanded}
-              onClick={handleExpandClick}
-              aria-expanded={project.expanded}
-              aria-label="show more"
-            >
-              <Collapse in={project.expanded}>
-                <CardContent>
-                  {expandedCard(project)}
-              </CardContent>
-              </Collapse>
-            </ExpandMore>
-        </Card>
-      </Grid>
-      )
-    }
+    let gridSizing = project.expanded ? {xs:12, sm:12, md:12} : {xs:12, sm:6, md:4};
     return (
-      <Grid item order={project.order} xs={12} sm={6} md={4}> 
+      <Grid item order={project.order} {...gridSizing}> 
         <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column'}}>
           <ExpandMore
-              expand={project.expanded}
-              onClick={handleExpandClick}
-              aria-expanded={project.expanded}
-              aria-label="show more"
-            >
-          {miniCard(project)}
+            expand={project.expanded}
+            onClick={handleExpandClick}
+            aria-expanded={project.expanded}
+            aria-label="show more"
+          >
+            {card(project)}
           </ExpandMore>
-
-        </Card>
-      </Grid>
+      </Card>
+    </Grid>
     )
+
   }
 
 
