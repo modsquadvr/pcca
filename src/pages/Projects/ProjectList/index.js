@@ -5,11 +5,11 @@ import AerialMachineVision from './AerialMachineVision';
 import AppliedPractical from './AppliedPractical';
 
 
-import flower from './media/flower.png';
-import steam from './media/mocap-dance-combo-500x500.png'
-import bee from "./media/bee-500x500bw.png"
-import im4 from "./media/im4-vr.jpeg"
-import multispec from "./media/multispec.png"
+import forest from './media/card-thumbs-200x200/forest.png';
+import mocap from './media/card-thumbs-200x200/mocap.png'
+import imagerecognition from "./media/card-thumbs-200x200/image-recognition.png"
+import im4 from "./media/card-thumbs-200x200/im4-vr.png"
+import multispec from "./media/card-thumbs-200x200/multispec.png"
 
 const ProjectList = [
   {
@@ -17,30 +17,21 @@ const ProjectList = [
     title:"IM4 Virtual Production",
     img:im4,
     alt:"",
-    blurb: `This impressive paella is a perfect party dish and a fun meal to cook
-    together with your guests. Add 1 cup of frozen peas along with the mussels,
-    if you like.`,
     component:Im4VirtualProduction
   },
   {
     key: 2,
     title:"The Forest",
-    img:flower,
+    img:forest,
     alt:"",
-    blurb: `This impressive paella is a perfect party dish and a fun meal to cook
-    together with your guests. Add 1 cup of frozen peas along with the mussels,
-    if you like.`,
     component:Forest
     
   },
   {
     key: 3,
     title:"MoCap in Dance",
-    img:steam,
+    img:mocap,
     alt:"",
-    blurb: `This impressive paella is a perfect party dish and a fun meal to cook
-    together with your guests. Add 1 cup of frozen peas along with the mussels,
-    if you like.`,
     component:MocapInDance
   },
   {
@@ -48,20 +39,14 @@ const ProjectList = [
     title:"Aerial Machine Vision",
     img:multispec,
     alt:"",
-    blurb: `This impressive paella is a perfect party dish and a fun meal to cook
-    together with your guests. Add 1 cup of frozen peas along with the mussels,
-    if you like.`,
     component:AerialMachineVision
 
   },
   {
     key: 5,
     title:"Applied Practical Kits",
-    img:bee,
+    img:imagerecognition,
     alt:"",
-    blurb: `This impressive paella is a perfect party dish and a fun meal to cook
-    together with your guests. Add 1 cup of frozen peas along with the mussels,
-    if you like.`,
     component:AppliedPractical
   }
 ]

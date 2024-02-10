@@ -47,7 +47,7 @@ export default function Projects() {
 
   return (
     <BasePage>
-      <Container className="projects" sx={{ py: 8 }} maxWidth="lg">
+      <Container className="projects" sx={{ py: 8 }} maxWidth="xl">
         <Grid container spacing={4} justifyContent="center">
           {projects.map((proj) =>   {
             return (
