@@ -1,6 +1,11 @@
 
-.MuiAppBar-positionFixed {
-  height:60px;
+.header {
+  height:64px;
+}
+
+.header a {
+  height:100%;
+  width:64px;
 }
 
 header.MuiAppBar-root {

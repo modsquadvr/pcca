@@ -1,13 +1,36 @@
 import * as React from 'react';
-import BasePage from "../BasePage"
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
+import Stack from '@mui/material/Stack';
+import BasePage from "../BasePage"
 import CardModal from './CardModal';
+import { FadeRuleLight } from "../../components/FadeRule";
+import { useTheme } from '@mui/material/styles';
 
 import ProjectList from "./ProjectList"
 
 import "./projects.css"
 
+function Hero() {
+  // eslint-disable-next-line
+  const theme = useTheme();
+  return (
+    <Container className="hero" disableGutters={true} maxWidth="1">
+      <Stack className="title bg" sx={{maxWidth:1}} spacing={2} justifyContent="space-evenly">
+        <Typography
+          component="h1"
+          variant="h1"
+          align="center"
+          color={theme.palette.primary.light}
+        >
+          Projects
+        </Typography>
+      </Stack>
+      <FadeRuleLight/>
+    </Container>
+  )
+}
 
 export default function Projects() {
   // grab list of projects and add the expanded flag and order for each item
@@ -46,16 +69,20 @@ export default function Projects() {
 
 
   return (
-    <BasePage>
-      <Container className="projects" sx={{ py: 8 }} maxWidth="xl">
-        <Grid container spacing={4} justifyContent="center">
-          {projects.map((proj) =>   {
-            return (
-              <CardModal key={"proj" + proj.key} openProject={openProject} closeProject={closeProject} project={proj}/>
-            )
-          })}
-        </Grid>
+    <BasePage className="projects" mode="light" hideHeaderRule={true}>
+      <Container disableGutters={true} className="bg" maxWidth="100%">
+        <Hero />
+        <Container sx={{ py: 8 }} maxWidth="xl">
+          <Grid container spacing={4} justifyContent="center">
+            {projects.map((proj) =>   {
+              return (
+                <CardModal key={"proj" + proj.key} openProject={openProject} closeProject={closeProject} project={proj}/>
+              )
+            })}
+          </Grid>
+        </Container>
       </Container>
+
     </BasePage>
   );
 }

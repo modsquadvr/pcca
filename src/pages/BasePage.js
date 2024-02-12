@@ -9,19 +9,18 @@ import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import theme from "../assets/theme";
 import { FadeRuleLight } from "../components/FadeRule";
-
-
+import logoSmall from '../assets/logos/pcca-logo-small-white.png';
 import "./basepage.css"
 
 
 function Header() {
   return (
 
-      <AppBar position="relative">
+      <AppBar className="header" position="relative">
         <Toolbar>
-          <Typography variant="h6" color="inherit" noWrap>
-            PCCA
-          </Typography>
+          <Link href="/">
+            <Box component="img" src={logoSmall} alt="PCCA LOGO" height="100%"/>
+          </Link>
         </Toolbar>
       </AppBar>
 
@@ -72,17 +71,18 @@ function Copyright() {
 
 
 export default function BasePage(props) {
-  let mainClasses = "main" + (props.mode==="dark" ? " main-dark" : "");
+  let mainClasses = props.className + " main" + (props.mode==="dark" ? " main-dark" : "");
+  let displayHeader = props.showHeader || props.showHeader === undefined;
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      {!props.hideHeader ? <Header /> : ""}
+      {displayHeader ? <Header /> : ""}
 
       <main className={mainClasses}>
-       {!props.hideHeader ? <FadeRuleLight />: ""}
+       {displayHeader && !props.hideHeaderRule ? <FadeRuleLight />: ""}
         {props.children}
       </main>
-      {!props.hideFooter ? <Footer /> : ""}
+      {props.showFooter ? <Footer /> : ""}
     </ThemeProvider>
   );
  };
