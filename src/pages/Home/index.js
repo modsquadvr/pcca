@@ -24,14 +24,14 @@ function Hero() {
       <Container className="bg">
         <Stack className="title" sx={{maxWidth:1}} spacing={2} justifyContent="space-evenly">
           <Typography
-            component="h1"
+            component="h2"
             variant="h2"
             align="center"
             color="text.primary"
           >
             Pacific Coastal Computing
           </Typography>
-          <Typography variant="h4" align="center" color="text.secondary" gutterBottom>
+          <Typography variant="h3" align="center" color="text.secondary" gutterBottom>
             Computing for Good
           </Typography>
 

@@ -1,5 +1,5 @@
-.projects .hero {
-
+.projects .expand-btn {
+  border: 10px solid rgba(86,96,108, 0.3);
 }
 
 .projects .hero .bg {
@@ -9,6 +9,5 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  margin-bottom:2em;
   min-height:40vh;
 }

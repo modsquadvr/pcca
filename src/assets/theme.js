@@ -1,4 +1,4 @@
-import { createTheme } from '@mui/material/styles';
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 
 const palette = {
   primary: {
@@ -53,19 +53,21 @@ const headerfont = {
   ].join(','),
 }
 const typography = {
-  h1: headerfont,
-  h2: headerfont,
-  h3: headerfont,
+  h1: {fontSize: '7rem', ...headerfont},
+  h2: {fontSize: '7rem', ...headerfont},
+  h3: {fontSize: '3rem', ...headerfont},
   h4: headerfont,
   h5: headerfont,
+  h6: {fontSize:'1.5rem', ...basefont},
   body1: basefont,
   fontSize: 18,
 }
 
-const theme = createTheme({
+let theme = createTheme({
   palette,
   typography
 });
 
+theme = responsiveFontSizes(theme, {factor:2.5})
 
 export default theme;

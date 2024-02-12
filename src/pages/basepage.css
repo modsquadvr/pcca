@@ -18,3 +18,20 @@ header.MuiAppBar-root {
   /* background:#56606c; */
   background: #EFEBE6;
 } 
+
+h1 {
+  font-size: 4rem;
+} @media (min-width:600) {
+  h1 {
+    font-size: 7rem;
+  }
+}
+
+
+h2 {
+  font-size: 3rem;
+} @media (min-width:600) {
+  h2 {
+    font-size: 7rem;
+  }
+}

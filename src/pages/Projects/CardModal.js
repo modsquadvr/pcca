@@ -56,11 +56,11 @@ const projectCard = (project) => {
     <>
       <CardMedia
       component="img"
-      sx={{width:"200px", height:"200px"}}
       image={project.img}
       alt={project.alt}
+      sx={{width:'50%'}}
       />
-      <CardContent sx={{ flexGrow: 1 }}>
+      <CardContent sx={{ flexGrow: 1, width:'50%' }}>
         <Typography gutterBottom variant="h5" component="h4" align="center">
           {project.title}
         </Typography>
@@ -84,15 +84,16 @@ export default function CardModal({project, ...props}) {
 
   let GridItem = (project) => {
     // resizes the grid items based on whether a project is expanded
-    let gridSizing = project.expanded ? {xs:12, sm:12, md:12, lg:12} : {xs:12, sm:12, md:6, lg: 6};
+    let gridSizing = project.expanded ? {xs:12, sm:12, md:12, lg:12} : {xs:12, sm:12, md:6, lg: 4};
     return (
       <Grid item order={project.order} {...gridSizing}> 
         <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column'}}>
           <ExpandMore
+            className="expand-btn"
             expand={project.expanded}
             onClick={handleExpandClick}
             aria-expanded={project.expanded}
-            aria-label="show more"
+            aria-label={"show more about " + project.title}
           >
             {projectCard(project)}
           </ExpandMore>

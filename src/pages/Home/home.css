@@ -64,27 +64,6 @@
 }
 
 
-.home .hero .title h1 {
-  font-size:3rem;
-}
-
-.home .hero .title h4 {
-  font-size:2rem;
-}
-
-@media (min-width: 600px) {
-  .home .hero .title {
-    padding:4rem;
-  }
-
-  .home .hero .title h1 {
-    font-size:4rem;
-  }
-
-  .home .hero .title h4 {
-    font-size: 2.7rem
-  }
-}
 
 
 .home .hero .blurb {
@@ -94,7 +73,6 @@
     'Ubuntu', 'Cantarell', 'Fira Sans', Arial, Helvetica, sans-serif;
   font-weight:200;
   font-style:italic;
-  font-size: 1.5rem;
 }
 
 
