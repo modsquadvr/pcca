@@ -5,11 +5,11 @@ import AerialMachineVision from './AerialMachineVision';
 import AppliedPractical from './AppliedPractical';
 
 
-import forest from './media/card-thumbs-200x200/forest.png';
-import mocap from './media/card-thumbs-200x200/mocap.png'
-import imagerecognition from "./media/card-thumbs-200x200/image-recognition.png"
-import im4 from "./media/card-thumbs-200x200/im4-vr.png"
-import multispec from "./media/card-thumbs-200x200/multispec.png"
+import forest from 'assets/photos/card-thumbs-200x200/forest.png';
+import mocap from 'assets/photos/card-thumbs-200x200/mocap.png'
+import imagerecognition from "assets/photos/card-thumbs-200x200/image-recognition.png"
+import im4 from "assets/photos/card-thumbs-200x200/im4-vr.png"
+import multispec from "assets/photos/card-thumbs-200x200/multispec.png"
 
 const ProjectList = [
   {
