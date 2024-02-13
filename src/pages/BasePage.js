@@ -62,7 +62,7 @@ function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="https://pacificcoastalcomputing.ca/">
+      <Link color="inherit" href="/">
         PCCA
       </Link>{' '}
       {new Date().getFullYear()}
