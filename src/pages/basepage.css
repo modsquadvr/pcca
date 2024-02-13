@@ -35,3 +35,7 @@ h2 {
     font-size: 7rem;
   }
 }
+
+a {
+  text-decoration: none!important;
+}
