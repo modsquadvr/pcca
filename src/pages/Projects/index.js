@@ -3,10 +3,10 @@ import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
-import BasePage from "../BasePage"
-import CardModal from './CardModal';
-import { FadeRuleLight } from "../../components/FadeRule";
 import { useTheme } from '@mui/material/styles';
+import BasePage from "pages/BasePage"
+import { FadeRuleLight } from "components/FadeRule";
+import CardModal from './CardModal';
 
 import ProjectList from "./ProjectList"
 

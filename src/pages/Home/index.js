@@ -5,10 +5,10 @@ import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import { FadeRuleLight } from "../../components/FadeRule";
+import { FadeRuleLight } from "components/FadeRule";
 import { useTheme } from '@mui/material/styles';
-import BasePage from "../BasePage"
-import flower from '../../assets/photos/flower.png';
+import BasePage from "pages/BasePage"
+import flower from 'assets/photos/flower.png';
 
 import "./home.css"
 

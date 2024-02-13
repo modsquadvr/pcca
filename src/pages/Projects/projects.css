@@ -1,5 +1,14 @@
 .projects .expand-btn {
-  border: 10px solid rgba(86,96,108, 0.3);
+  border: 1px solid rgba(86,96,108, 0.3);
+  border-radius:0;
+}
+
+.projects .expand-btn:hover {
+  background: rgb(211, 213, 214);
+  -webkit-transition: background-color 100ms linear;
+  -ms-transition: background-color 100ms linear;
+  transition: background-color 100ms linear;
+  border:none;
 }
 
 .projects .hero .bg {

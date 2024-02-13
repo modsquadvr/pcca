@@ -1,6 +1,9 @@
 import * as React from 'react';
 import Typography from '@mui/material/Typography';
 
+  // eslint-disable-next-line
+import { FadeRuleLight, FadeRuleDark } from "components/FadeRule";
+
 
 
 export default function Im4VirtualProduction({project, ...props}) {
@@ -8,6 +11,10 @@ export default function Im4VirtualProduction({project, ...props}) {
 
   return (
     <>
+    <Typography component='h4' variant='h4'>
+      The IM4 Virtual Production Program
+    </Typography>
+    <FadeRuleDark/>
       <Typography paragraph >
         Calosoma retusum is a beetle of the family Carabidae.
       </Typography>

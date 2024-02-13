@@ -7,10 +7,12 @@ import Link from '@mui/material/Link';
 import Button from '@mui/material/Button';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import theme from "../assets/theme";
-import { FadeRuleLight } from "../components/FadeRule";
-import logoSmall from '../assets/logos/pcca-logo-small-white.png';
-import "./basepage.css"
+
+
+import theme from "assets/theme";
+import { FadeRuleLight } from "components/FadeRule";
+import logoSmall from 'assets/logos/pcca-logo-small-white.png';
+import "pages/basepage.css"
 
 
 function Header() {

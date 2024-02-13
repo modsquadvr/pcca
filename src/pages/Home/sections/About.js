@@ -4,13 +4,11 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-//import { useTheme } from '@mui/material/styles';
 
-import ocean from '../../../assets/photos/ocean.png';
+import ocean from 'assets/photos/ocean.png';
 
 
 export default function About() {
-//  const theme = useTheme();
   return (
     <Container sx={{m:0, w:1, maxWidth:1}} className="infodump light about">
       <Grid container className="infodump-grid" direction="row">
@@ -41,10 +39,6 @@ export default function About() {
         <Box
             component="img"
             sx={{
-              // height: 233,
-              // width: 350,
-              // maxHeight: { xs: 233, md: 400, lg: 550 },
-              // maxWidth: { xs: 233, md: 400, lg: 400 },
               maxWidth:"1",
               maxHeight:"550px",
               mr:0
