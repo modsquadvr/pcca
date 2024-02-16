@@ -61,6 +61,7 @@ const typography = {
   h6: {fontSize:'1.5rem', ...basefont},
   body1: basefont,
   fontSize: 18,
+  button: headerfont
 }
 
 let theme = createTheme({
