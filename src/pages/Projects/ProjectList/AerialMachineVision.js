@@ -1,6 +1,8 @@
 import * as React from 'react';
 import Typography from '@mui/material/Typography';
 
+// eslint-disable-next-line
+import { FadeRuleLight, FadeRuleDark } from "components/FadeRule";
 
 
 export default function AerialMachineVision({project, ...props}) {
@@ -8,6 +10,10 @@ export default function AerialMachineVision({project, ...props}) {
 
   return (
     <>
+      <Typography component='h4' variant='h4'>
+        Aerial Machine Vision
+      </Typography>
+      <FadeRuleDark marginBottom="2em"/>
       <Typography paragraph>
         The Minera Lead Mines were a mining operation and are now a country park and tourist centre in the village of Minera near Wrexham, in Wrexham County Borough, Wales.
       </Typography>

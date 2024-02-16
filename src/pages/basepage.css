@@ -12,6 +12,10 @@ header.MuiAppBar-root {
   box-shadow:none;
 }
 
+body {
+  word-wrap: break-word;
+}
+
 
 .main {
   min-height:100vh;

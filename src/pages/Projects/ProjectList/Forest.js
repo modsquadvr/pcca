@@ -1,13 +1,18 @@
 import * as React from 'react';
 import Typography from '@mui/material/Typography';
 
-
+// eslint-disable-next-line
+import { FadeRuleLight, FadeRuleDark } from "components/FadeRule";
 
 export default function Forest({project, ...props}) {
 
 
   return (
     <>
+      <Typography component='h4' variant='h4'>
+        The Forest
+      </Typography>
+      <FadeRuleDark marginBottom="2em"/>    
       <Typography paragraph >
         The Moyle Interconnector is a 500 megawatt (MW) HVDC link between Scotland and Northern Ireland, running between Auchencrosh in Ayrshire and Ballycronan More in County Antrim. It went into service in 2001 and is owned and operated by Mutual Energy.
       </Typography>
