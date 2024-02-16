@@ -11,7 +11,7 @@ import ocean from 'assets/photos/ocean.png';
 export default function About() {
   return (
     <Container sx={{m:0, w:1, maxWidth:1}} className="infodump light about">
-      <Grid container className="infodump-grid" direction="row">
+      <Grid container spacing={4} className="infodump-grid" direction="row">
         <Grid item 
               xs={12} md={6} 
               textAlign="right"

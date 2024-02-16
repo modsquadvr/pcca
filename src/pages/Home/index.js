@@ -7,12 +7,13 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { FadeRuleLight } from "components/FadeRule";
 import { useTheme } from '@mui/material/styles';
+
 import BasePage from "pages/BasePage"
 import flower from 'assets/photos/flower.png';
 
 import "./home.css"
 
-// page sections
+// home page sections
 import About from "./sections/About"
 import Services from "./sections/Services";
 import Projects from "./sections/Projects";
@@ -54,8 +55,8 @@ function Heart() {
   const theme = useTheme();
 
   return (
-    <Container sx={{m:0, w:1, maxWidth:1}} className="infodump infodump-dark heart">
-      <Grid container className="infodump-grid" direction="row">
+    <Container sx={{m:0, w:1, maxWidth:1}} className="infodump dark heart">
+      <Grid container spacing={4} className="infodump-grid" direction="row">
         <Grid item xs={12} md={6} align="right">
           <Box
             component="img"

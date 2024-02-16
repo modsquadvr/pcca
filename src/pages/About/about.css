@@ -1,0 +1,13 @@
+.about .hero .bg {
+  height:100%;
+  background: url("../../assets/photos/coast-sunset.jpg") no-repeat center 80%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height:40vh;
+}
+
+.about .hero .title {
+  padding: 2em;
+}
