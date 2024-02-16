@@ -6,9 +6,10 @@ import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import Collapse from '@mui/material/Collapse';
 import ButtonBase from '@mui/material/ButtonBase';
+import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-
+import CloseIcon from '@mui/icons-material/Close';
 
 
 const ExpandMore = styled((props) => {
@@ -25,8 +26,19 @@ const ExpandMore = styled((props) => {
 
 
 // displays either the mini card or the full expanded project component
-const projectCard = (project) => {
-
+const projectCard = (project, handleExpandClick) => {
+  const CloseButton = (props) => {
+    let classNames = "close-btn " + props.className;
+    return (
+      <ExpandMore
+      className={classNames}
+      expand={project.expanded}
+      onClick={handleExpandClick}
+      aria-expanded={project.expanded}
+      aria-label={"Hide details on " + project.title}
+      >{props.text}</ExpandMore>
+    )
+  }
   // ========= EXPANDED CARD
   if (project.expanded) {
     let expandedCard;
@@ -42,8 +54,10 @@ const projectCard = (project) => {
 
     return (
       <Collapse in={project.expanded}>
-        <CardContent>
+        <CardContent className="card-expanded">
+          <CloseButton className="close-icon" text={<CloseIcon/>}/>
           {expandedCard}
+          <CloseButton className="close-text MuiTypography-h5" text={<Typography variant="button">Close</Typography>}/>
         </CardContent>
       </Collapse>
   
@@ -53,7 +67,13 @@ const projectCard = (project) => {
 
 // ========= MINI CARD
   return (
-    <>
+    <ExpandMore
+    className="expand-btn"
+    expand={project.expanded}
+    onClick={handleExpandClick}
+    aria-expanded={project.expanded}
+    aria-label={"show more about " + project.title}
+    >
       <CardMedia
       component="img"
       image={project.img}
@@ -65,7 +85,8 @@ const projectCard = (project) => {
           {project.title}
         </Typography>
       </CardContent>
-    </>
+    </ExpandMore>
+
   )
 
 }
@@ -73,7 +94,7 @@ const projectCard = (project) => {
 
 
 export default function CardModal({project, ...props}) {
-  const handleExpandClick = () => {
+    const handleExpandClick = () => {
     if (project.expanded) { // if already expanded, hide
       props.closeProject(project.key);
     } else { // if not expanded, show
@@ -82,23 +103,16 @@ export default function CardModal({project, ...props}) {
     
   };      
 
+
   let GridItem = (project) => {
     // resizes the grid items based on whether a project is expanded
     let gridSizing = project.expanded ? {xs:12, sm:12, md:12, lg:12} : {xs:12, sm:12, md:6, lg: 4};
     return (
-      <Grid item order={project.order} {...gridSizing}> 
+      <Grid item order={project.order} {...gridSizing} textAlign="center"> 
         <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column'}}>
-          <ExpandMore
-            className="expand-btn"
-            expand={project.expanded}
-            onClick={handleExpandClick}
-            aria-expanded={project.expanded}
-            aria-label={"show more about " + project.title}
-          >
-            {projectCard(project)}
-          </ExpandMore>
-      </Card>
-    </Grid>
+          {projectCard(project, handleExpandClick)}
+        </Card>
+      </Grid>
     )
 
   }
