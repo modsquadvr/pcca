@@ -42,7 +42,7 @@ export default function Projects() {
     let project = { ...obj, expanded: false, order:obj.key };
 
     // if user followed a link that is /projects/[urlSlug], then that project will open up already expanded
-    if (project.urlSlug.toUpperCase() == slug.toUpperCase()) {   
+    if (project.urlSlug.toUpperCase() === slug.toUpperCase()) {   
       project.expanded = true;                                   
       project.order = 0;
     }
