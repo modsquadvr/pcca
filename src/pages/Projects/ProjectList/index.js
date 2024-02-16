@@ -17,6 +17,7 @@ const ProjectList = [
     title:"IM4 Virtual Production",
     img:im4,
     alt:"",
+    urlSlug:"im4-vr",
     component:Im4VirtualProduction
   },
   {
@@ -24,6 +25,7 @@ const ProjectList = [
     title:"The Forest",
     img:forest,
     alt:"",
+    urlSlug:"the-forest",
     component:Forest
     
   },
@@ -32,6 +34,7 @@ const ProjectList = [
     title:"MoCap in Dance",
     img:mocap,
     alt:"",
+    urlSlug:"mocap-dance",
     component:MocapInDance
   },
   {
@@ -39,6 +42,7 @@ const ProjectList = [
     title:"Aerial Machine Vision",
     img:multispec,
     alt:"",
+    urlSlug:"aerial-vision",
     component:AerialMachineVision
 
   },
@@ -47,6 +51,7 @@ const ProjectList = [
     title:"Applied Practical Kits",
     img:imagerecognition,
     alt:"",
+    urlSlug:"kits",
     component:AppliedPractical
   }
 ]
