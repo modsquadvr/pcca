@@ -7,7 +7,7 @@ import { useTheme } from '@mui/material/styles';
 import BasePage from "pages/BasePage"
 import { FadeRuleLight } from "components/FadeRule";
 import CardModal from './CardModal';
-
+import {useParams} from "react-router-dom";
 import ProjectList from "./ProjectList"
 
 import "./projects.css"
@@ -33,10 +33,24 @@ function Hero() {
 }
 
 export default function Projects() {
+
+  let { slug } = useParams();
+
   // grab list of projects and add the expanded flag and order for each item
   // order is set by the key attribute so the order of projects displayed can be altered in the ProjectList/index.js json
-  let projList = ProjectList.map(obj => ({ ...obj, expanded: false, order:obj.key }))
+  let projList = ProjectList.map(obj => {
+    let project = { ...obj, expanded: false, order:obj.key };
+
+    // if user followed a link that is /projects/[urlSlug], then that project will open up already expanded
+    if (project.urlSlug.toUpperCase() == slug.toUpperCase()) {   
+      project.expanded = true;                                   
+      project.order = 0;
+    }
+    return project;
+  });
+
   const [projects, setProjects] = React.useState([...projList]);
+
 
   // called by a project when it is clicked to open
   const openProject = (projKey) => {
