@@ -89,7 +89,7 @@ function Heart() {
                 <p>
                   T. Technology: innovation, applied research, computing 4 good.
                 </p>
-                <Button variant="outlined" color="light">Learn More</Button>
+                <Button variant="outlined" color="light" href="/heart">Learn More</Button>
             </Typography>
           </Box>
 

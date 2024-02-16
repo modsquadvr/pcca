@@ -30,7 +30,7 @@ export default function About() {
                 <p>
                   Our umbrella mandate is computing for good (C4G).  
                 </p>
-                <Button variant="contained">Learn More</Button>
+                <Button variant="contained" href="/about">Learn More</Button>
             </Typography>
           </Box>
 
