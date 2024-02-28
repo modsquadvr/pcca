@@ -2,14 +2,14 @@ import * as React from 'react';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
-
+import Link from '@mui/material/Link';
 
   // eslint-disable-next-line
 import { FadeRuleLight, FadeRuleDark } from "components/FadeRule";
-import Link from '@mui/material/Link';
-import im4VR from "assets/photos/im4-vr.jpeg"
-import im4Setup from "assets/photos/im4-vr-setup.jpg"
-import im4Logos from "assets/photos/im4-vr-logos.png"
+
+import im4VR from "assets/photos/IM4-VR/im4-vr.jpeg"
+import im4Setup from "assets/photos/IM4-VR/im4-vr-setup.jpg"
+import im4Logos from "assets/photos/IM4-VR/im4-vr-logos.png"
 
 
 

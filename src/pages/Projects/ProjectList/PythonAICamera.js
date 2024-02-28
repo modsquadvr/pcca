@@ -4,13 +4,13 @@ import Typography from '@mui/material/Typography';
 // eslint-disable-next-line
 import { FadeRuleLight, FadeRuleDark } from "components/FadeRule";
 
-export default function AppliedPractical({project, ...props}) {
+export default function PythonAICamera({project, ...props}) {
 
 
   return (
     <>
       <Typography component='h4' variant='h4'>
-        Applied Practical
+        Python AI Cameras
       </Typography>
       <FadeRuleDark marginBottom="2em"/>    
       <Typography paragraph>

@@ -2,7 +2,10 @@ import Im4VirtualProduction from './Im4VirtualProduction';
 import Forest from './Forest';
 import MocapInDance from './MocapInDance';
 import AerialMachineVision from './AerialMachineVision';
-import AppliedPractical from './AppliedPractical';
+import PythonAICamera from './PythonAICamera';
+import KelpFarming from './KelpFarming';
+import ForestFireMitigation from './ForestFireMitigation';
+import CommunityConnection from './CommunityConnection';
 
 
 import forest from 'assets/photos/card-thumbs-200x200/forest.png';
@@ -48,12 +51,36 @@ const ProjectList = [
   },
   {
     key: 5,
-    title:"Applied Practical Kits",
+    title:"Python AI Cameras",
     img:imagerecognition,
     alt:"",
-    urlSlug:"kits",
-    component:AppliedPractical
-  }
+    urlSlug:"python-camera",
+    component:PythonAICamera
+  },
+  {
+    key: 6,
+    title:"Kelp Farming",
+    img:imagerecognition,
+    alt:"",
+    urlSlug:"kelp-farming",
+    component:KelpFarming
+  },
+  {
+    key: 7,
+    title:"Forest Fire Mitigation",
+    img:imagerecognition,
+    alt:"",
+    urlSlug:"forest-fires",
+    component:ForestFireMitigation
+  },
+  {
+    key: 8,
+    title:"Community Connection",
+    img:imagerecognition,
+    alt:"",
+    urlSlug:"community-connection",
+    component:CommunityConnection
+  } 
 ]
 
 export default ProjectList;
