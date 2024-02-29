@@ -21,8 +21,8 @@ import Projects from "./sections/Projects";
 
 function Hero() {
   return (
-    <Container className="hero"  maxWidth="1">
-      <Container className="bg">
+    <Container className="hero"  disableGutters maxWidth="1" sx={{margin:0}}>
+      <Container className="bg" disableGutters maxWidth="1" sx={{margin:0}}>
         <Stack className="title" sx={{maxWidth:1}} spacing={2} justifyContent="space-evenly">
           <Typography
             component="h2"
