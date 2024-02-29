@@ -112,6 +112,10 @@
   text-align: center;
 }
 
+.projects .all-projects {
+  font-size: 3rem;
+}
+
 .home .fade-rule-dark {
   margin-bottom: 2em;
 }

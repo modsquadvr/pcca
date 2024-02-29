@@ -5,7 +5,7 @@ import BasePage from "../BasePage"
 export default function Podcasts() {
   return (
     <BasePage>
-      Heart page
+      Podcasts
     </BasePage>
   );
 }
