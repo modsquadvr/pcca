@@ -84,19 +84,25 @@ export default function About() {
                 xs={12} md={6} 
                 textAlign="right"
           >
-            <Box className="blurb">
+          <Box className="blurb">
+              <Typography variant="h4">
+                    Our HEART Focus
+              </Typography>
               <Typography variant="body-1">
-                <Typography variant="h4">
-                    Our Heart Focus
-                  </Typography>
                   <p>
-                    The Pacific Coastal Computing Association (PCCA) incorporated in 2020 as a non-profit based in Vancouver, B.C., Canada. PCCA works with partners to promote innovation, diversity & inclusivity in capacity building and positive change in education, the arts, environment, health & wellness and technology. 
+                    H. Healthcare: health & wellbeing, esp. mental health.  
                   </p>
                   <p>
-                    Our approach to digital transformation advisory and impact project interweaves strategic thinking of IT infrastructure, tools and technologies alongside the advanced diverse skills needed.
+                    E. Environment: sustainability and conservation. 
                   </p>
                   <p>
-                    Our umbrella mandate is computing for good (C4G).  
+                    A. The Arts: performing arts, interactive media and A&E. 
+                  </p>
+                  <p>
+                    R. Reconciliation: fostering harmony, diversity & inclusivity. 
+                  </p>
+                  <p>
+                    T. Technology: innovation, applied research, computing 4 good.
                   </p>
               </Typography>
             </Box>
