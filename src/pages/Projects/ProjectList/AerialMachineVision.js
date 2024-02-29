@@ -9,17 +9,17 @@ import { FadeRuleLight, FadeRuleDark } from "components/FadeRule";
 import GridPhoto from "components/GridPhoto";
 
 // eslint-disable-next-line
-import classify_rgb from "assets/photos/Aerial-Vision/classify_rgb.png"
+import classify_rgb from "assets/photos/projects/AerialVision/classify_rgb.png"
 // eslint-disable-next-line
-import MAV3M from "assets/photos/Aerial-Vision/MAV3M.jpg"
+import MAV3M from "assets/photos/projects/AerialVision/MAV3M.jpg"
 // eslint-disable-next-line
-import minesegsat from "assets/photos/Aerial-Vision/minesegsat.png"
+import minesegsat from "assets/photos/projects/AerialVision/minesegsat.png"
 // eslint-disable-next-line
-import ortho_multi from "assets/photos/Aerial-Vision/ortho_multi.png"
+import ortho_multi from "assets/photos/projects/AerialVision/ortho_multi.png"
 // eslint-disable-next-line
-import remote_sensing from "assets/photos/Aerial-Vision/remote_sensing.png"
+import remote_sensing from "assets/photos/projects/AerialVision/remote_sensing.png"
 // eslint-disable-next-line
-import s2_infographic from "assets/photos/Aerial-Vision/Sentinel-2-infographic-tm.jpg"
+import s2_infographic from "assets/photos/projects/AerialVision/Sentinel-2-infographic-tm.jpg"
 
 
 export default function AerialMachineVision({project, ...props}) {

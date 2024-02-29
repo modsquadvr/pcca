@@ -8,11 +8,11 @@ import Link from '@mui/material/Link';
 import { FadeRuleLight, FadeRuleDark } from "components/FadeRule";
 import GridPhoto from "components/GridPhoto";
 
-import derekAndy from "assets/photos/Kelp-Farming/derek_andy_gimbal.jpg"
-import aldynView from "assets/photos/Kelp-Farming/aldyn_view.jpg"
-import group from "assets/photos/Kelp-Farming/group.jpg"
-import harvesting from "assets/photos/Kelp-Farming/harvesting.jpg"
-import lecture from "assets/photos/Kelp-Farming/nick_jasmine_lecture.jpg"
+import derekAndy from "assets/photos/projects/KelpFarming/derek_andy_gimbal.jpg"
+import aldynView from "assets/photos/projects/KelpFarming/aldyn_view.jpg"
+import group from "assets/photos/projects/KelpFarming/group.jpg"
+import harvesting from "assets/photos/projects/KelpFarming/harvesting.jpg"
+import lecture from "assets/photos/projects/KelpFarming/nick_jasmine_lecture.jpg"
 
 
 export default function HealthCareUnburdened({project, ...props}) {
@@ -21,7 +21,7 @@ export default function HealthCareUnburdened({project, ...props}) {
   return (
     <>
       <Typography component='h4' variant='h4'>
-        Kelp Farming
+        Health Care Unburdened
       </Typography>
       <FadeRuleDark marginBottom="2em"/>
       <Grid container spacing={4} justifyContent="center">

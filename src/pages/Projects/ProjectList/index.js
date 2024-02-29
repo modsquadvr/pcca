@@ -15,6 +15,7 @@ import imagerecognition from "assets/photos/card-thumbs-200x200/image-recognitio
 import im4 from "assets/photos/card-thumbs-200x200/im4-vr.png"
 import multispec from "assets/photos/card-thumbs-200x200/multispec.png"
 import kelpForest from "assets/photos/card-thumbs-200x200/kelp-forest.png"
+import forestFire from "assets/photos/card-thumbs-200x200/forest-fire.png"
 
 const ProjectList = [
   {
@@ -70,7 +71,7 @@ const ProjectList = [
   {
     key: 7,
     title:"Forest Fire Mitigation",
-    img:imagerecognition,
+    img:forestFire,
     alt:"",
     urlSlug:"forest-fires",
     component:ForestFireMitigation

@@ -6,7 +6,7 @@ import Link from '@mui/material/Link';
 
 
 
-import kitBasic from "assets/photos/Python-Cameras/kit-basic.jpg"
+import kitBasic from "assets/photos/projects/PythonCameras/kit-basic.jpg"
 
 // eslint-disable-next-line
 import { FadeRuleLight, FadeRuleDark } from "components/FadeRule";

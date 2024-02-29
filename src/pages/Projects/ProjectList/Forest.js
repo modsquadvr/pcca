@@ -8,7 +8,7 @@ import Link from '@mui/material/Link';
 import { FadeRuleLight, FadeRuleDark } from "components/FadeRule";
 import GridPhoto from "components/GridPhoto";
 
-import spatialForest from "assets/photos/TheForest/spatial-forest.png"
+import spatialForest from "assets/photos/projects/TheForest/spatial-forest.png"
 
 
 export default function Forest({project, ...props}) {

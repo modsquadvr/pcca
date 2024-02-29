@@ -7,9 +7,9 @@ import Link from '@mui/material/Link';
   // eslint-disable-next-line
 import { FadeRuleLight, FadeRuleDark } from "components/FadeRule";
 
-import im4VR from "assets/photos/IM4-VR/im4-vr.jpeg"
-import im4Setup from "assets/photos/IM4-VR/im4-vr-setup.jpg"
-import im4Logos from "assets/photos/IM4-VR/im4-vr-logos.png"
+import im4VR from "assets/photos/projects/IM4VR/im4-vr.jpeg"
+import im4Setup from "assets/photos/projects/IM4VR/im4-vr-setup.jpg"
+import im4Logos from "assets/photos/projects/IM4VR/im4-vr-logos.png"
 
 
 
