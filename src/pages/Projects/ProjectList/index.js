@@ -13,6 +13,7 @@ import mocap from 'assets/photos/card-thumbs-200x200/mocap.png'
 import imagerecognition from "assets/photos/card-thumbs-200x200/image-recognition.png"
 import im4 from "assets/photos/card-thumbs-200x200/im4-vr.png"
 import multispec from "assets/photos/card-thumbs-200x200/multispec.png"
+import kelpForest from "assets/photos/card-thumbs-200x200/kelp-forest.png"
 
 const ProjectList = [
   {
@@ -60,7 +61,7 @@ const ProjectList = [
   {
     key: 6,
     title:"Kelp Farming",
-    img:imagerecognition,
+    img:kelpForest,
     alt:"",
     urlSlug:"kelp-farming",
     component:KelpFarming
