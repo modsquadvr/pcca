@@ -6,6 +6,7 @@ import PythonAICamera from './PythonAICamera';
 import KelpFarming from './KelpFarming';
 import ForestFireMitigation from './ForestFireMitigation';
 import CommunityConnection from './CommunityConnection';
+import HealthCareUnburdened from './HealthCareUnburdened';
 
 
 import forest from 'assets/photos/card-thumbs-200x200/forest.png';
@@ -81,6 +82,14 @@ const ProjectList = [
     alt:"",
     urlSlug:"community-connection",
     component:CommunityConnection
+  },
+  {
+    key: 9,
+    title:"Health Care Unburdened",
+    img:imagerecognition,
+    alt:"",
+    urlSlug:"healthcare-unburdened",
+    component:HealthCareUnburdened
   } 
 ]
 
