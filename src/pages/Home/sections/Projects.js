@@ -13,15 +13,15 @@ import bee from "assets/photos/bee-500x500bw.png"
 
 const projects = [
   {
-    title:"Earth Data Store & Analytics",
+    title:"Earth Analytics and the Environment",
     img:eds
   },
   {
-    title:"STEAM, Dance & RT3D Tech",
+    title:"Dance, Film and the Arts",
     img:steam
   },
   {
-    title:"Mental Health & Youth",
+    title:"Work-Integrated Learning",
     img:bee
   }
 ]
@@ -29,6 +29,7 @@ const projects = [
 export default function Projects() {
   return ( 
     <Container className="projects" sx={{ py: 8 }} maxWidth="lg">
+      <H2 href="http:coastalcomputing.ca/projects">Explore the projects!</H2>
       <Grid container spacing={4}>
         {projects.map((project, index) => (
           <Grid item key={"proj" + index} xs={12} sm={6} md={4}>

@@ -33,7 +33,7 @@ function Header() {
 function Footer() {
   return (
     <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
-    <Typography variant="h6" align="center" gutterBottom>
+    {/* <Typography variant="h6" align="center" gutterBottom>
       <Stack
           sx={{ pt: 4 }}
           direction="row"
@@ -51,7 +51,7 @@ function Footer() {
       component="p"
     >
       Subtitle goes here
-    </Typography>
+    </Typography> */}
     <Copyright />
     </Box>
   )
