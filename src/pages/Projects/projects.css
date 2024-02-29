@@ -42,3 +42,7 @@
   background: rgb(177, 187, 190);
 }
 
+.projects iframe {
+  height: 100%;
+  width: 100%;
+}

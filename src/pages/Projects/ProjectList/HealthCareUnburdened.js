@@ -15,7 +15,7 @@ import harvesting from "assets/photos/Kelp-Farming/harvesting.jpg"
 import lecture from "assets/photos/Kelp-Farming/nick_jasmine_lecture.jpg"
 
 
-export default function KelpFarming({project, ...props}) {
+export default function HealthCareUnburdened({project, ...props}) {
 
 
   return (

@@ -6,6 +6,7 @@ import PythonAICamera from './PythonAICamera';
 import KelpFarming from './KelpFarming';
 import ForestFireMitigation from './ForestFireMitigation';
 import CommunityConnection from './CommunityConnection';
+import HealthCareUnburdened from './HealthCareUnburdened';
 
 
 import forest from 'assets/photos/card-thumbs-200x200/forest.png';
@@ -13,6 +14,7 @@ import mocap from 'assets/photos/card-thumbs-200x200/mocap.png'
 import imagerecognition from "assets/photos/card-thumbs-200x200/image-recognition.png"
 import im4 from "assets/photos/card-thumbs-200x200/im4-vr.png"
 import multispec from "assets/photos/card-thumbs-200x200/multispec.png"
+import kelpForest from "assets/photos/card-thumbs-200x200/kelp-forest.png"
 
 const ProjectList = [
   {
@@ -60,7 +62,7 @@ const ProjectList = [
   {
     key: 6,
     title:"Kelp Farming",
-    img:imagerecognition,
+    img:kelpForest,
     alt:"",
     urlSlug:"kelp-farming",
     component:KelpFarming
@@ -80,6 +82,14 @@ const ProjectList = [
     alt:"",
     urlSlug:"community-connection",
     component:CommunityConnection
+  },
+  {
+    key: 9,
+    title:"Health Care Unburdened",
+    img:imagerecognition,
+    alt:"",
+    urlSlug:"healthcare-unburdened",
+    component:HealthCareUnburdened
   } 
 ]
 
