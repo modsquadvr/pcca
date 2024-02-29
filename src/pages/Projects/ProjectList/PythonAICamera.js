@@ -1,8 +1,16 @@
 import * as React from 'react';
 import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import Container from '@mui/material/Container';
+import Link from '@mui/material/Link';
+
+
+
+import kitBasic from "assets/photos/Python-Cameras/kit-basic.jpg"
 
 // eslint-disable-next-line
 import { FadeRuleLight, FadeRuleDark } from "components/FadeRule";
+import GridPhoto from "components/GridPhoto";
 
 export default function PythonAICamera({project, ...props}) {
 
@@ -13,15 +21,28 @@ export default function PythonAICamera({project, ...props}) {
         Python AI Cameras
       </Typography>
       <FadeRuleDark marginBottom="2em"/>    
-      <Typography paragraph>
-      On 10 February 2018, an explosion occurred in the afternoon of the Bolivian city of Oruro during the traditional carnival of the city. In a street food stand, eight people were killed by an explosion near the main street of Oruro. At first it was thought that it was the explosion of a gas canister due to mishandling, but not finding fragments of the alleged canister or a gas leak that caused it, the government has discarded this theory. It also left more than forty people injured.
-      </Typography>
-      <Typography paragraph>
-      Three days later, another attack occurred at 18:57. Approximately three kilos of dynamite mixed with ANFO were used, which were detonated a short distance from the first explosion. The explosion caused the death of four persons, two of them children, and left nine people injured.
-      </Typography>
-      <Typography paragraph>
-      The culprit of both explosions is unknown, but there have been several detainees. Three suspects who were in the explosion site of the second explosion were arrested the following day, but later it was discovered that they had no relation at all with the event. Another suspect of the first explosion continues apprehended since 27 March 2018. They were the most serious explosive attacks in Bolivian history.
-      </Typography>
+      <Grid container spacing={4} justifyContent="center">
+        <GridPhoto photo={kitBasic}/>
+        <Grid item xs={12} md={6}>
+          <Typography paragraph textAlign="left">
+            Calosoma retusum reaches about 25–32 millimetres (0.98–1.26 in) in length. This species usually has a bright metallic dark green or bronze green coloration, sometime with bluish reflections. The borders of the pronotum are rounded and raised. Elytra are striated, with large punctures. These beetles are voracious consumer of caterpillars, so they are considered beneficial insects for the agriculture.
+          </Typography>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <Typography paragraph textAlign="left">
+            Calosoma retusum reaches about 25–32 millimetres (0.98–1.26 in) in length. This species usually has a bright metallic dark green or bronze green coloration, sometime with bluish reflections. The borders of the pronotum are rounded and raised. Elytra are striated, with large punctures. These beetles are voracious consumer of caterpillars, so they are considered beneficial insects for the agriculture.
+          </Typography>
+        </Grid>
+        <GridPhoto size="6" photo={kitBasic}/>
+        <Grid item xs={12} md={6}>
+          <Typography component="h5" variant="h5" textAlign="center">
+            <Link href="https://im4lab.com/virtualproduction" target="_blank" rel="noopener noreferrer" >Visit the Project Website</Link>
+          </Typography>
+        </Grid>
+        <Grid item xs={12}>
+          <Container component="img" src={kitBasic} />
+        </Grid>
+      </Grid>
     </>
   );
 }
