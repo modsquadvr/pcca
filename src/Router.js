@@ -7,7 +7,7 @@ import {
 import Home from "./pages/Home";
 import About from "./pages/About"
 import Projects from "./pages/Projects"
-import Heart from "./pages/Heart"
+import Podcasts from "./pages/Podcasts"
 
 export default function App() {
   return (
@@ -21,7 +21,7 @@ export default function App() {
           <Route path="/about" element={<About/>}/>
           <Route path="/projects/:slug" element={<Projects/>}/>
           <Route path="/projects" element={<Projects/>}/>
-          <Route path="/heart" element={<Heart/>}/>
+          <Route path="/podcasts" element={<Podcasts/>}/>
           <Route path="/contact" element={<Home/>}/>
         </Routes>
       </div>

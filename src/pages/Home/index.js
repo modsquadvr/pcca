@@ -1,15 +1,18 @@
 import * as React from 'react';
+  // eslint-disable-next-line
 import Box from '@mui/material/Box';
+  // eslint-disable-next-line
 import Button from '@mui/material/Button';
+  // eslint-disable-next-line
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { FadeRuleLight } from "components/FadeRule";
+  // eslint-disable-next-line
 import { useTheme } from '@mui/material/styles';
 
 import BasePage from "pages/BasePage"
-import flower from 'assets/photos/flower.png';
 
 import "./home.css"
 
@@ -17,6 +20,7 @@ import "./home.css"
 import About from "./sections/About"
 import Services from "./sections/Services";
 import Projects from "./sections/Projects";
+import Podcasts from "./sections/Podcasts";
 
 
 function Hero() {
@@ -50,56 +54,6 @@ function Hero() {
   )
 }
 
-function Heart() {
-  // eslint-disable-next-line
-  const theme = useTheme();
-
-  return (
-    <Container sx={{m:0, w:1, maxWidth:1}} className="infodump dark heart">
-      <Grid container spacing={4} className="infodump-grid" direction="row">
-        <Grid item xs={12} md={6} align="right">
-          <Box
-            component="img"
-            sx={{
-              maxWidth:"1",
-              mr:0
-            }}
-            title="Salmonberry Flower, taken by Sang Mah"
-            alt=""
-            src={flower}
-          />
-        </Grid>
-        <Grid item xs={12} md={6} >
-        <Box className="blurb">
-            <Typography variant="h4">
-                  Our HEART Focus
-            </Typography>
-            <Typography variant="body-1">
-                <p>
-                  H. Healthcare: health & wellbeing, esp. mental health.  
-                </p>
-                <p>
-                  E. Environment: sustainability and conservation. 
-                </p>
-                <p>
-                  A. The Arts: performing arts, interactive media and A&E. 
-                </p>
-                <p>
-                  R. Reconciliation: fostering harmony, diversity & inclusivity. 
-                </p>
-                <p>
-                  T. Technology: innovation, applied research, computing 4 good.
-                </p>
-                <Button variant="outlined" color="light" href="/heart">Learn More</Button>
-            </Typography>
-          </Box>
-
-        </Grid>
-      </Grid>
-    </Container>
-  );
-}
-
 
 
 export default function Home() {
@@ -107,7 +61,7 @@ export default function Home() {
       <BasePage className="home" showHeader={true} showFooter={true} mode="dark">
         <Hero />
         <About />
-        <Heart />
+        <Podcasts />
         <Services />
         <Projects />
 
