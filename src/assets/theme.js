@@ -59,7 +59,8 @@ const typography = {
   h4: headerfont,
   h5: headerfont,
   h6: {fontSize:'1.5rem', ...basefont},
-  body1: basefont,
+  body1: {fontSize:'1.5rem', ...basefont},
+  body2: basefont,
   fontSize: 18,
   button: headerfont
 }
