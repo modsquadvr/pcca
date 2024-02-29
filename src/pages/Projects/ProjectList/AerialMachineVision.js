@@ -1,8 +1,25 @@
 import * as React from 'react';
 import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import Container from '@mui/material/Container';
+import Link from '@mui/material/Link';
 
 // eslint-disable-next-line
 import { FadeRuleLight, FadeRuleDark } from "components/FadeRule";
+import GridPhoto from "components/GridPhoto";
+
+// eslint-disable-next-line
+import classify_rgb from "assets/photos/Aerial-Vision/classify_rgb.png"
+// eslint-disable-next-line
+import MAV3M from "assets/photos/Aerial-Vision/MAV3M.jpg"
+// eslint-disable-next-line
+import minesegsat from "assets/photos/Aerial-Vision/minesegsat.png"
+// eslint-disable-next-line
+import ortho_multi from "assets/photos/Aerial-Vision/ortho_multi.png"
+// eslint-disable-next-line
+import remote_sensing from "assets/photos/Aerial-Vision/remote_sensing.png"
+// eslint-disable-next-line
+import s2_infographic from "assets/photos/Aerial-Vision/Sentinel-2-infographic-tm.jpg"
 
 
 export default function AerialMachineVision({project, ...props}) {
@@ -14,18 +31,55 @@ export default function AerialMachineVision({project, ...props}) {
         Aerial Machine Vision
       </Typography>
       <FadeRuleDark marginBottom="2em"/>
-      <Typography paragraph>
-        The Minera Lead Mines were a mining operation and are now a country park and tourist centre in the village of Minera near Wrexham, in Wrexham County Borough, Wales.
-      </Typography>
-      <Typography paragraph>
-        The first written record of lead mining at Minera dates back to 1296, when Edward I of England hired miners from the site to work in his new mines in Devon. Not all of them vacated the area, however, as mining went on until the Black Death in 1349, when it ended.
-      </Typography>
-      <Typography paragraph>
-        In 1527, two men bought the rights to mine on the site, but deeper workings were unworkable due to the presence of underground rivers, and the inability to prevent flooding. The inability to pay for steam engines to pump out water closed the mines again until 1845, when John Taylor & Sons, mining agents from Flintshire, formed the Minera Mining Company. They were able to build a stationary steam engine on site, and also blast caves from down in the valley into the mines, for extra drainage. The steam engine was a Cornish engine (i.e. a Beam engine), typical for stationary engines at the time.
-      </Typography>
-      <Typography paragraph>
-        John Taylor & Sons had used a £30,000 investment at the time, yet the profits for 1864 alone were £60,000 (equivalent to over £4 Million in 2008. By 1900, the price of lead and zinc had fallen dramatically, while the price of coal used for the steam engine rose. The stationary steam engine stopped work in 1909. The owners sold off the mines and all assets by 1914. 
-      </Typography>
+      <Grid container spacing={4} justifyContent="center">
+
+        <Grid item xs={12}>
+          <Container component="img" src={ortho_multi} />
+        </Grid>
+
+        <Grid item xs={12}>
+          <Container component="p" sx={{textAlign:"left"}}>
+            Calosoma retusum reaches about 25–32 millimetres (0.98–1.26 in) in length. This species usually has a bright metallic dark green or bronze green coloration, sometime with bluish reflections. The borders of the pronotum are rounded and raised. Elytra are striated, with large punctures. These beetles are voracious consumer of caterpillars, so they are considered beneficial insects for the agriculture.
+          </Container>
+        </Grid>
+
+        <Grid item xs={12} md={6}>
+          <Container component="p" sx={{textAlign:"right"}}>
+            Calosoma retusum reaches about 25–32 millimetres (0.98–1.26 in) in length. This species usually has a bright metallic dark green or bronze green coloration, sometime with bluish reflections. The borders of the pronotum are rounded and raised. Elytra are striated, with large punctures. These beetles are voracious consumer of caterpillars, so they are considered beneficial insects for the agriculture.
+          </Container>
+        </Grid>
+        <GridPhoto size="6" photo={MAV3M}/>
+
+        <Grid item xs={12}>
+          <Container component="img" src={s2_infographic} />
+        </Grid>
+
+        <Grid item xs={12}>
+          <Container component="p" sx={{textAlign:"left"}}>
+            Calosoma retusum reaches about 25–32 millimetres (0.98–1.26 in) in length. This species usually has a bright metallic dark green or bronze green coloration, sometime with bluish reflections. The borders of the pronotum are rounded and raised. Elytra are striated, with large punctures. These beetles are voracious consumer of caterpillars, so they are considered beneficial insects for the agriculture.
+          </Container>
+        </Grid>
+
+        <GridPhoto size="4" photo={classify_rgb}/>
+        <GridPhoto size="4" photo={minesegsat}/>
+        <GridPhoto size="4" photo={remote_sensing}/>
+
+
+        <Grid item xs={12}>
+          <Container component="p" sx={{textAlign:"left"}}>
+            Calosoma retusum reaches about 25–32 millimetres (0.98–1.26 in) in length. This species usually has a bright metallic dark green or bronze green coloration, sometime with bluish reflections. The borders of the pronotum are rounded and raised. Elytra are striated, with large punctures. These beetles are voracious consumer of caterpillars, so they are considered beneficial insects for the agriculture.
+          </Container>
+        </Grid>
+
+
+        <Grid item xs={12} md={6}>
+          <Typography component="h5" variant="h5" textAlign="center">
+            <Link href="https://im4lab.com/virtualproduction" target="_blank" rel="noopener noreferrer" >Visit the Project Website</Link>
+          </Typography>
+        </Grid>
+
+
+      </Grid>
     </>
   );
 }
