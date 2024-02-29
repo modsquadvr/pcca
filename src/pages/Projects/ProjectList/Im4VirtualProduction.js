@@ -28,12 +28,12 @@ export default function Im4VirtualProduction({project, ...props}) {
       </Grid>
       <Grid item xs={12} md={6}>
         <Typography paragraph textAlign="left">
-          Calosoma retusum reaches about 25–32 millimetres (0.98–1.26 in) in length. This species usually has a bright metallic dark green or bronze green coloration, sometime with bluish reflections. The borders of the pronotum are rounded and raised. Elytra are striated, with large punctures. These beetles are voracious consumer of caterpillars, so they are considered beneficial insects for the agriculture.
+          In the summer of 2023, students at the University of Victoria had the opportunity to support 24 indigenous filmmakers who were taking part in the Indigenous Matriarchs Four Virtual Production certificate program at Emily Carr University. This project took experienced filmmakers and introduced them to <a href="https://www.unrealengine.com/">Unreal Engine</a> and how to use it to create compelling visions for making films.
         </Typography>
       </Grid>
       <Grid item xs={12} md={6}>
         <Typography paragraph textAlign="left">
-          Calosoma retusum reaches about 25–32 millimetres (0.98–1.26 in) in length. This species usually has a bright metallic dark green or bronze green coloration, sometime with bluish reflections. The borders of the pronotum are rounded and raised. Elytra are striated, with large punctures. These beetles are voracious consumer of caterpillars, so they are considered beneficial insects for the agriculture.
+          The IM4 students have each produced a short film that in some cases are complete works in themselves, in others are a vision demo towards larger works yet to come. The University of Victoria students, working under internship programs with PCCA and using stage facilities with <a href="https://www.thesawmill.ca/">Sawmill Studios</a>, were technical support to the IM4 students and provided motion captures to animate the film visions.
         </Typography>
       </Grid>
       <Grid item xs={12} md={6}>
@@ -43,6 +43,7 @@ export default function Im4VirtualProduction({project, ...props}) {
         <Typography component="h5" variant="h5" textAlign="center">
           <Link href="https://im4lab.com/virtualproduction" target="_blank" rel="noopener noreferrer" >Visit the Project Website</Link>
         </Typography>
+        <iframe src="https://player.vimeo.com/video/917752927?h=6a5266d410" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen title="IM4Trailer"></iframe>
       </Grid>
       <Grid item xs={12}>
         <Container component="img" src={im4Logos} />

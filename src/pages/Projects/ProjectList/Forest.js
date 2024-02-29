@@ -14,14 +14,15 @@ export default function Forest({project, ...props}) {
       </Typography>
       <FadeRuleDark marginBottom="2em"/>    
       <Typography paragraph >
-        The Moyle Interconnector is a 500 megawatt (MW) HVDC link between Scotland and Northern Ireland, running between Auchencrosh in Ayrshire and Ballycronan More in County Antrim. It went into service in 2001 and is owned and operated by Mutual Energy.
+        A PCCA intern Samantha Loney chose to use her experience and heritage to create a website that ties her Metis heritage to forests and the place that they hold in society. This work is an extension of her ongoing <a href="https://podcastle.org/people/samantha-loney/">podcast series</a>
       </Typography>
       <Typography paragraph >
-        The Moyle Interconnector has a capacity of 500 MW and is of dual monopole configuration. Each pole consists of a coaxial 250 kV DC cable with integrated return conductors (IRC), each cable having a transmission capacity of 250 MW. The LV return conductor elements of the IRCs have suffered failures (see below), and their function was restored by laying new separate metallic return conductors (MRCs) in 2016. The converter stations were designed and constructed by Siemens, and were the first to feature Siemens light-triggered thyristors.
+        The platform on which Samantha has been doing this work is a communication platform that is being used in a number of forthcoming projects and is being extended to allow communication by communities with collections of scanned objects. Using tools such as drones and phone-based scanning software, trees and other objects of interest are being represented on the platform as images, and soon to be 3D models of the ojects. These are presented in frame with a videoconference tool which allows participants to flexibly groups themselves around the objects that they want to discuss.
       </Typography>
       <Typography paragraph >
-        Moyle is a Line Commutated Converter (LCC) design; as a result, it cannot offer Black Start capability, unlike Voltage Sourced Converters. However LCC technology offers lower losses and hence more efficient power transfer. 
+        We invite you to watch a narrated tour of TheForest below, or to join the <a href="https://app.spatial.chat/s/TheForest">live platform</a> and experience it for yourself!
       </Typography>
+      <iframe src="https://player.vimeo.com/video/916867819?h=d4d53d831e" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen title="sharingforest"></iframe>
     </>
   );
 }
