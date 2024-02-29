@@ -14,7 +14,7 @@ export default function MocapInDance({project, ...props}) {
       </Typography>
       <FadeRuleDark marginBottom="2em"/>    
       <Typography paragraph>
-        There are several projects which made use of both the motion capture facilities at <a href="">The Sawmill</a> as well as a Rokoko motion capture suit at the University of Victoria. PCCA led a program to integrate these capabilities into student projects.
+        There are several projects which made use of both the motion capture facilities at <a href="https://www.thesawmill.ca/">The Sawmill</a> as well as a Rokoko motion capture suit at the University of Victoria. PCCA led a program to integrate these capabilities into student projects.
       </Typography>
       <Typography paragraph>
         The video below is a project by one of the summer students to use the motion capture suit to input motion data to an Unreal Engine character of a silhouette. The student then performed a dance routine with that silhouette amplifying her motions.
