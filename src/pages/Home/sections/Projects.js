@@ -29,7 +29,7 @@ const projects = [
 export default function Projects() {
   return ( 
     <Container className="projects" sx={{ py: 8 }} maxWidth="lg">
-      <H2 href="http:coastalcomputing.ca/projects">Explore the projects!</H2>
+      <h2 href="http:coastalcomputing.ca/projects">Explore the projects!</h2>
       <Grid container spacing={4}>
         {projects.map((project, index) => (
           <Grid item key={"proj" + index} xs={12} sm={6} md={4}>
