@@ -30,7 +30,7 @@ export default function AerialMachineVision({project, ...props}) {
       <Typography component='h4' variant='h4'>
         Aerial Machine Vision
       </Typography>
-      <FadeRuleDark marginBottom="2em"/>
+      <FadeRuleDark/>
       <Grid container spacing={4} justifyContent="center">
 
         <Grid item xs={12}>
@@ -44,11 +44,11 @@ export default function AerialMachineVision({project, ...props}) {
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Container component="p" sx={{textAlign:"right"}}>
-            Calosoma retusum reaches about 25–32 millimetres (0.98–1.26 in) in length. This species usually has a bright metallic dark green or bronze green coloration, sometime with bluish reflections. The borders of the pronotum are rounded and raised. Elytra are striated, with large punctures. These beetles are voracious consumer of caterpillars, so they are considered beneficial insects for the agriculture.
-          </Container>
+          <Typography paragraph textAlign="left">
+            Drip drop lemon drop there's a candy in my pocket sticky sticky. Will you come out to play with me, I need someone to gnaw the thistles three icky icky. Palomino pantomime there's a rhyme for Alice's climb. Up the well of ticky-tacky sway they march in numbers one and away. Don't trust them! Yore, we have no need for swarthy worthy words upon this moor. Say no moray there's plenty of here to stay for when I'm planting an everweiss I'll let it go a galloping through the woods here today. Just pray, pray, pray for me that I can find a sweet song to call home, for 
+          </Typography>
         </Grid>
-        <GridPhoto size="6" photo={MAV3M}/>
+        <GridPhoto size={6} photo={MAV3M}/>
 
         <Grid item xs={12}>
           <Container component="img" src={s2_infographic} />
@@ -60,9 +60,9 @@ export default function AerialMachineVision({project, ...props}) {
           </Container>
         </Grid>
 
-        <GridPhoto size="4" photo={classify_rgb}/>
-        <GridPhoto size="4" photo={minesegsat}/>
-        <GridPhoto size="4" photo={remote_sensing}/>
+        <GridPhoto size={4} photo={classify_rgb}/>
+        <GridPhoto size={4} photo={minesegsat}/>
+        <GridPhoto size={4} photo={remote_sensing}/>
 
 
         <Grid item xs={12}>

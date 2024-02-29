@@ -1,5 +1,5 @@
 import Im4VirtualProduction from './Im4VirtualProduction';
-import Forest from './Forest';
+import TheForest from './TheForest';
 import MocapInDance from './MocapInDance';
 import AerialMachineVision from './AerialMachineVision';
 import PythonAICamera from './PythonAICamera';
@@ -32,7 +32,7 @@ const ProjectList = [
     img:forest,
     alt:"",
     urlSlug:"the-forest",
-    component:Forest
+    component:TheForest
     
   },
   {

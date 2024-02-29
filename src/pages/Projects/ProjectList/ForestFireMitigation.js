@@ -24,7 +24,7 @@ export default function ForestFireMitigation({project, ...props}) {
       <Typography component='h4' variant='h4'>
         Forest Fire Mitigation
       </Typography>
-      <FadeRuleDark marginBottom="2em"/>
+      <FadeRuleDark/>
       <Grid container spacing={4} justifyContent="center">
 
         <Grid item xs={12}>
@@ -37,9 +37,9 @@ export default function ForestFireMitigation({project, ...props}) {
           </Typography>
         </Grid>
 
-        <GridPhoto size="4" photo={training}/>
-        <GridPhoto size="4" photo={program}/>
-        <GridPhoto size="4" photo={mitigation}/>
+        <GridPhoto size={4} photo={training}/>
+        <GridPhoto size={4} photo={program}/>
+        <GridPhoto size={4} photo={mitigation}/>
 
         <Grid item xs={12}>
           <Typography paragraph textAlign="left">
@@ -47,7 +47,7 @@ export default function ForestFireMitigation({project, ...props}) {
           </Typography>
         </Grid>
 
-        <GridPhoto size="6" photo={johnscreekfire}/>
+        <GridPhoto size={6} photo={johnscreekfire}/>
         <Grid item xs={12} md={6}>
           <Typography paragraph textAlign="left">
             Why Orlando still hasn't written back is beyond me. The pigs won't enjoy much of the ritual, I am sure of it. So far they've been quick to find any possible escape route they can, in order to avoid being eaten. Perhaps Orlando has done the same? I've still got his pair of Sunday Corduroy Slacks, and cannot imagine him leaving them behind forever. 
@@ -60,9 +60,7 @@ export default function ForestFireMitigation({project, ...props}) {
             <Link href="https://www.fness.bc.ca/core-programs/mitigation/" target="_blank" rel="noopener noreferrer" >Visit the FNESS Website</Link>
           </Typography>
         </Grid>
-        <Grid item xs={12}>
-          <Container component="img" src={community} />
-        </Grid>
+        <GridPhoto size={12} photo={community}/>
       </Grid>
     </>
   );

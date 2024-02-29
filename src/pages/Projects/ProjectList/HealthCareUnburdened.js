@@ -23,7 +23,7 @@ export default function HealthCareUnburdened({project, ...props}) {
       <Typography component='h4' variant='h4'>
         Health Care Unburdened
       </Typography>
-      <FadeRuleDark marginBottom="2em"/>
+      <FadeRuleDark/>
       <Grid container spacing={4} justifyContent="center">
 
         <Grid item xs={12}>
@@ -36,9 +36,9 @@ export default function HealthCareUnburdened({project, ...props}) {
           </Typography>
         </Grid>
 
-        <GridPhoto size="4" photo={lecture}/>
-        <GridPhoto size="4" photo={derekAndy}/>
-        <GridPhoto size="4" photo={aldynView}/>
+        <GridPhoto size={4} photo={lecture}/>
+        <GridPhoto size={4} photo={derekAndy}/>
+        <GridPhoto size={4} photo={aldynView}/>
 
         <Grid item xs={12}>
           <Typography paragraph textAlign="left">

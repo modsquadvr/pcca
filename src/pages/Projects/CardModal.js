@@ -52,7 +52,7 @@ const projectCard = (project, handleExpandClick) => {
     }
 
     return (
-      <Collapse in={project.expanded}>
+      <Collapse in={project.expanded} id={project.urlSlug}>
         <CardContent className="card-expanded">
           <CloseButton className="close-icon" text={<CloseIcon/>}/>
           {expandedCard}

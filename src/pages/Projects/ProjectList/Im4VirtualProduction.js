@@ -23,7 +23,7 @@ export default function Im4VirtualProduction({project, ...props}) {
     <Typography component='h4' variant='h4'>
       The IM4 Virtual Production Program
     </Typography>
-    <FadeRuleDark marginBottom="2em"/>
+    <FadeRuleDark/>
     <Container>
       <Grid container spacing={4} rowSpacing={10} justifyContent="center">
         <Grid item xs={12} md={6}>

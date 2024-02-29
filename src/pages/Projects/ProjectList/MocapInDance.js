@@ -12,7 +12,7 @@ export default function MocapInDance({project, ...props}) {
       <Typography component='h4' variant='h4'>
         Mocap in Dance
       </Typography>
-      <FadeRuleDark marginBottom="2em"/>    
+      <FadeRuleDark/>
       <Typography paragraph>
         There are several projects which made use of both the motion capture facilities at <a href="https://www.thesawmill.ca/">The Sawmill</a> as well as a Rokoko motion capture suit at the University of Victoria. PCCA led a program to integrate these capabilities into student projects.
       </Typography>

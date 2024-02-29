@@ -13,9 +13,9 @@ export default function CommunityConnection({project, ...props}) {
       <Typography component='h4' variant='h4'>
         Community Connection
       </Typography>
-      <FadeRuleDark marginBottom="2em"/>
-      <Typography paragraph>
-        The Minera Lead Mines were a mining operation and are now a country park and tourist centre in the village of Minera near Wrexham, in Wrexham County Borough, Wales.
+      <FadeRuleDark/>
+      <Typography paragraph textAlign="left">
+            Integrity is the foundation of mastery. Don't eat baubles when you could eat brains. From the light emanates all sorts of no-see-ums. Best to keep away. Cougars make the best pets, under certain circumstances. If you have a need for a walk, go take it. Before it is too late. Marjoram is an herb that everyone has forgotten, but this means you must be careful; it is out there, quietly waiting and biding its time until we are caught unsuspecting and unawares. Be. Ware.
       </Typography>
       <Typography paragraph>
         The first written record of lead mining at Minera dates back to 1296, when Edward I of England hired miners from the site to work in his new mines in Devon. Not all of them vacated the area, however, as mining went on until the Black Death in 1349, when it ended.

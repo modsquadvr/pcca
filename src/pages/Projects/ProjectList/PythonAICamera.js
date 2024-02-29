@@ -20,7 +20,7 @@ export default function PythonAICamera({project, ...props}) {
       <Typography component='h4' variant='h4'>
         Python AI Cameras
       </Typography>
-      <FadeRuleDark marginBottom="2em"/>    
+      <FadeRuleDark/>
       <Grid container spacing={4} justifyContent="center">
         <GridPhoto photo={kitBasic}/>
         <Grid item xs={12} md={6}>
@@ -33,7 +33,7 @@ export default function PythonAICamera({project, ...props}) {
             Calosoma retusum reaches about 25–32 millimetres (0.98–1.26 in) in length. This species usually has a bright metallic dark green or bronze green coloration, sometime with bluish reflections. The borders of the pronotum are rounded and raised. Elytra are striated, with large punctures. These beetles are voracious consumer of caterpillars, so they are considered beneficial insects for the agriculture.
           </Typography>
         </Grid>
-        <GridPhoto size="6" photo={kitBasic}/>
+        <GridPhoto size={6} photo={kitBasic}/>
         <Grid item xs={12} md={6}>
           <Typography component="h5" variant="h5" textAlign="center">
             <Link href="https://im4lab.com/virtualproduction" target="_blank" rel="noopener noreferrer" >Visit the Project Website</Link>
