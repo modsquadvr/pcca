@@ -19,13 +19,8 @@ export default function Im4VirtualProduction({project, ...props}) {
 
 
   return (
-    <>
-    <Typography component='h4' variant='h4'>
-      The IM4 Virtual Production Program
-    </Typography>
-    <FadeRuleDark/>
     <Container>
-      <Grid container spacing={4} rowSpacing={10} justifyContent="center">
+      <Grid container spacing={4} rowSpacing={{xs:3, lg:10}} justifyContent="center" alignItems="flex-start">
         <Grid item xs={12} md={6}>
           <Box className="card-image" component="img" src={im4VR} />
         </Grid>
@@ -51,17 +46,12 @@ export default function Im4VirtualProduction({project, ...props}) {
         </Grid>
 
         <Grid item xs={12}>
-            <iframe src="https://player.vimeo.com/video/917752927?h=6a5266d410" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen title="IM4Trailer"></iframe>
+            <iframe src="https://player.vimeo.com/video/917752927?h=6a5266d410" width="640" height="564" frameBorder="0" allow="fullscreen" allowFullScreen title="IM4Trailer"></iframe>
         </Grid>
         <Grid item xs={12}>
           <Box component="img" src={im4Logos} />
         </Grid>
       </Grid>
     </Container>
-
-      
-
-    </>
-
   );
 }

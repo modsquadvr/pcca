@@ -34,6 +34,15 @@
   max-width:100%;
 }
 
+/* 
+  Wow. Didn't know I could do this. Fun.
+   This selects only the first child of a grid container, assuming that first child
+   doesn't have a breakpoint at medium, ie it is a full 12 wide aka full page width 
+*/
+.projects .card-expanded .MuiGrid-container .MuiGrid-item.MuiGrid-grid-xs-12:not([class*=' MuiGrid-grid-md-'],[class^='MuiGrid-grid-md-']):first-child {
+  /* padding-top:0em; */
+}
+
 
 .projects .close-icon {
   float:right;

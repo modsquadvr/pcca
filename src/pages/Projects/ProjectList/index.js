@@ -21,6 +21,7 @@ const ProjectList = [
   {
     key:1,
     title:"IM4 Virtual Production",
+    fullTitle:"The IM4 Virtual Production Program",
     img:im4,
     alt:"",
     urlSlug:"im4-vr",
@@ -29,6 +30,7 @@ const ProjectList = [
   {
     key: 2,
     title:"The Forest",
+    fullTitle:"The Forest",
     img:forest,
     alt:"",
     urlSlug:"the-forest",
@@ -38,6 +40,7 @@ const ProjectList = [
   {
     key: 3,
     title:"MoCap in Dance",
+    fullTitle:"MoCap in Dance",
     img:mocap,
     alt:"",
     urlSlug:"mocap-dance",
@@ -46,6 +49,7 @@ const ProjectList = [
   {
     key: 4,
     title:"Aerial Machine Vision",
+    fullTitle:"Aerial Machine Vision",
     img:multispec,
     alt:"",
     urlSlug:"aerial-vision",
@@ -55,6 +59,7 @@ const ProjectList = [
   {
     key: 5,
     title:"Python AI Cameras",
+    fullTitle:"Python AI Cameras",
     img:imagerecognition,
     alt:"",
     urlSlug:"python-camera",
@@ -63,6 +68,7 @@ const ProjectList = [
   {
     key: 6,
     title:"Kelp Farming",
+    fullTitle:"Kelp Farming",
     img:kelpForest,
     alt:"",
     urlSlug:"kelp-farming",
@@ -71,6 +77,7 @@ const ProjectList = [
   {
     key: 7,
     title:"Forest Fire Mitigation",
+    fullTitle:"Forest Fire Mitigation",
     img:forestFire,
     alt:"",
     urlSlug:"forest-fires",
@@ -79,6 +86,7 @@ const ProjectList = [
   {
     key: 8,
     title:"Community Connection",
+    fullTitle:"Community Connection",
     img:imagerecognition,
     alt:"",
     urlSlug:"community-connection",
@@ -87,6 +95,7 @@ const ProjectList = [
   {
     key: 9,
     title:"Health Care Unburdened",
+    fullTitle:"Health Care Unburdened",
     img:imagerecognition,
     alt:"",
     urlSlug:"healthcare-unburdened",

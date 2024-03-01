@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Typography from '@mui/material/Typography';
+import Container from '@mui/material/Typography';
 
 // eslint-disable-next-line
 import { FadeRuleLight, FadeRuleDark } from "components/FadeRule";
@@ -9,11 +10,7 @@ export default function CommunityConnection({project, ...props}) {
 
 
   return (
-    <>
-      <Typography component='h4' variant='h4'>
-        Community Connection
-      </Typography>
-      <FadeRuleDark/>
+    <Container>
       <Typography paragraph textAlign="left">
             Integrity is the foundation of mastery. Don't eat baubles when you could eat brains. From the light emanates all sorts of no-see-ums. Best to keep away. Cougars make the best pets, under certain circumstances. If you have a need for a walk, go take it. Before it is too late. Marjoram is an herb that everyone has forgotten, but this means you must be careful; it is out there, quietly waiting and biding its time until we are caught unsuspecting and unawares. Be. Ware.
       </Typography>
@@ -26,6 +23,6 @@ export default function CommunityConnection({project, ...props}) {
       <Typography paragraph>
         John Taylor & Sons had used a £30,000 investment at the time, yet the profits for 1864 alone were £60,000 (equivalent to over £4 Million in 2008. By 1900, the price of lead and zinc had fallen dramatically, while the price of coal used for the steam engine rose. The stationary steam engine stopped work in 1909. The owners sold off the mines and all assets by 1914. 
       </Typography>
-    </>
+    </Container>
   );
 }

@@ -19,12 +19,8 @@ export default function HealthCareUnburdened({project, ...props}) {
 
 
   return (
-    <>
-      <Typography component='h4' variant='h4'>
-        Health Care Unburdened
-      </Typography>
-      <FadeRuleDark/>
-      <Grid container spacing={4} justifyContent="center">
+    <Container>
+      <Grid container spacing={4} rowSpacing={{xs:3, lg:10}} justifyContent="center" alignItems="flex-start">
 
         <Grid item xs={12}>
           <Container component="img" src={harvesting} sx={{maxHeight:"600px", width:"auto"}}/>
@@ -63,6 +59,6 @@ export default function HealthCareUnburdened({project, ...props}) {
           <Container component="img" src={group} />
         </Grid>
       </Grid>
-    </>
+    </Container>
   );
 }

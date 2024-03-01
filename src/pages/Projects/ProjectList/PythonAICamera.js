@@ -16,12 +16,8 @@ export default function PythonAICamera({project, ...props}) {
 
 
   return (
-    <>
-      <Typography component='h4' variant='h4'>
-        Python AI Cameras
-      </Typography>
-      <FadeRuleDark/>
-      <Grid container spacing={4} justifyContent="center">
+    <Container>
+      <Grid container spacing={4} rowSpacing={{xs:3, lg:10}} justifyContent="center" alignItems="flex-start">
         <GridPhoto photo={kitBasic}/>
         <Grid item xs={12} md={6}>
           <Typography paragraph textAlign="left">
@@ -43,6 +39,6 @@ export default function PythonAICamera({project, ...props}) {
           <Container component="img" src={kitBasic} />
         </Grid>
       </Grid>
-    </>
+    </Container>
   );
 }

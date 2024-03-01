@@ -20,12 +20,8 @@ export default function ForestFireMitigation({project, ...props}) {
 
 
   return (
-    <>
-      <Typography component='h4' variant='h4'>
-        Forest Fire Mitigation
-      </Typography>
-      <FadeRuleDark/>
-      <Grid container spacing={4} justifyContent="center">
+    <Container>
+      <Grid container spacing={4} rowSpacing={{xs:3, lg:10}} justifyContent="center" alignItems="flex-start">
 
         <Grid item xs={12}>
           <Container component="img" src={postburn} sx={{maxHeight:"600px", width:"auto"}}/>
@@ -62,6 +58,6 @@ export default function ForestFireMitigation({project, ...props}) {
         </Grid>
         <GridPhoto size={12} photo={community}/>
       </Grid>
-    </>
+    </Container>
   );
 }

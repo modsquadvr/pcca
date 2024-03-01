@@ -26,12 +26,8 @@ export default function AerialMachineVision({project, ...props}) {
 
 
   return (
-    <>
-      <Typography component='h4' variant='h4'>
-        Aerial Machine Vision
-      </Typography>
-      <FadeRuleDark/>
-      <Grid container spacing={4} justifyContent="center">
+    <Container>
+      <Grid container spacing={4} rowSpacing={{xs:3, lg:10}} justifyContent="center" alignItems="flex-start">
 
         <Grid item xs={12}>
           <Container component="img" src={ortho_multi} />
@@ -80,6 +76,7 @@ export default function AerialMachineVision({project, ...props}) {
 
 
       </Grid>
-    </>
+    </Container>
+
   );
 }
