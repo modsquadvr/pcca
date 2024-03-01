@@ -129,7 +129,7 @@ export default function CardModal({project, ...props}) {
 
   let GridItem = (project) => {
     // resizes the grid items based on whether a project is expanded
-    let gridSizing = project.expanded ? {xs:12, sm:12, md:12, lg:12} : {xs:12, sm:12, md:6, lg: 4};
+    let gridSizing = project.expanded ? {xs:12, sm:12, md:12, lg:12} : {xs:12, sm:12, md:6, xl:4};
     return (
       <Grid item order={project.order} {...gridSizing} textAlign="center" ref={projRef}> 
         <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column'}}>

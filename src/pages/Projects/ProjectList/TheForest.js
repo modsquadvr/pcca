@@ -18,10 +18,8 @@ export default function TheForest({project, ...props}) {
   return (
     <Container>
       <Grid container spacing={4} rowSpacing={{xs:3, lg:10}} justifyContent="center" alignItems="flex-start">
-        <Grid item component="p" xs={12}>
-          <Typography paragraph sx={{fontStyle:"italic"}} textAlign="left">
-            The Sharing Forest is an interactive forest inspired by the traditional Metis story of The Giving Tree, designed to encourage people to get out in nature and fill our trees with cultural elements to help preserve our heritage.  The forest is filled with 3D polycam scanned trees from across Turtle Island.
-          </Typography>
+        <Grid item component="p" sx={{fontStyle:"italic"}} xs={12}>
+          The Sharing Forest is an interactive forest inspired by the traditional Metis story of The Giving Tree, designed to encourage people to get out in nature and fill our trees with cultural elements to help preserve our heritage.  The forest is filled with 3D polycam scanned trees from across Turtle Island.
         </Grid>
         <Grid item xs={12} component="img"  className="card-image" src={spatialForest}/>
         <Grid item component="p" xs={12}>

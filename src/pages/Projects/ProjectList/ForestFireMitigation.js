@@ -41,17 +41,12 @@ export default function ForestFireMitigation({project, ...props}) {
         <Grid item xs={12} md={6} component="img" src={johnscreekfire} className="card-image"/>
 
         <Grid item component="p" xs={12} md={6}>
+          <Link href="https://www.fness.bc.ca/core-programs/mitigation/" target="_blank" rel="noopener noreferrer" >Visit the FNESS Website</Link>
           Why Orlando still hasn't written back is beyond me. The pigs won't enjoy much of the ritual, I am sure of it. So far they've been quick to find any possible escape route they can, in order to avoid being eaten. Perhaps Orlando has done the same? I've still got his pair of Sunday Corduroy Slacks, and cannot imagine him leaving them behind forever. 
         </Grid>
 
 
-        <Grid item xs={12} md={6}>
-          <Typography component="h5" variant="h5" textAlign="center">
-            <Link href="https://www.fness.bc.ca/core-programs/mitigation/" target="_blank" rel="noopener noreferrer" >Visit the FNESS Website</Link>
-          </Typography>
-        </Grid>
-
-        <Grid item xs={12} md={4} component="img" src={community} className="card-image"/>
+        <Grid item xs={12} component="img" src={community} className="card-image"/>
       </Grid>
     </Container>
   );
