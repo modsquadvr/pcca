@@ -1,8 +1,11 @@
 import * as React from 'react';
+// eslint-disable-next-line
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
+// eslint-disable-next-line
 import Link from '@mui/material/Link';
+// eslint-disable-next-line
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 
@@ -46,7 +49,7 @@ export default function Im4VirtualProduction({project, ...props}) {
         </Grid>
 
         <Grid item xs={12} component="img" src={im4Logos} className="card-image"/>
-        
+
       </Grid>
     </Container>
   );
