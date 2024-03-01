@@ -31,7 +31,6 @@
 
 .projects .card-expanded .card-image {
   max-height:600px;
-  max-width:100%;
 }
 
 /* 
@@ -43,10 +42,16 @@
   /* padding-top:0em; */
 }
 
+.projects .card-expanded .MuiGrid-container p.MuiGrid-item {
+  text-align:left;
+}
+
+
 
 .projects .close-icon {
   float:right;
 }
+
 
 .projects .close-text {
   border: 1px solid rgba(86,96,108, 0.3);
