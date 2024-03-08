@@ -11,7 +11,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 
 import theme from "assets/theme";
 import { FadeRuleLight } from "components/FadeRule";
-import logoSmall from 'assets/logos/pcca-logo-small-white.png';
+import headerLogo from 'assets/logos/header_logo.png';
 import "pages/basepage.css"
 
 
@@ -21,7 +21,7 @@ function Header() {
       <AppBar className="header" position="relative">
         <Toolbar>
           <Link href="/">
-            <Box component="img" src={logoSmall} alt="PCCA LOGO" height="100%"/>
+            <Box component="img" src={headerLogo} alt="PCCA LOGO" height="100%"/>
           </Link>
         </Toolbar>
       </AppBar>
