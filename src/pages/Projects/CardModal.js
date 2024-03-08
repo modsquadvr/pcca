@@ -1,5 +1,6 @@
 
 import * as React from 'react';
+// eslint-disable-next-line
 import { useEffect, useRef } from 'react';
 import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
@@ -13,8 +14,8 @@ import Grid from '@mui/material/Grid';
 
 import CloseIcon from '@mui/icons-material/Close';
 
-  // eslint-disable-next-line
-  import { FadeRuleLight, FadeRuleDark } from "components/FadeRule";
+// eslint-disable-next-line
+import { FadeRuleLight, FadeRuleDark } from "components/FadeRule";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
