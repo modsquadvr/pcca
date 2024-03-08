@@ -5,6 +5,9 @@ import Grid from '@mui/material/Grid';
 // eslint-disable-next-line
 import { FadeRuleLight, FadeRuleDark } from "components/FadeRule";
 
+import community from "assets/photos/projects/ForestFire/community.png"
+import mitigation from "assets/photos/projects/ForestFire/FNESS_mitigation.jpg"
+
 
 export default function CommunityConnection({project, ...props}) {
 
@@ -12,9 +15,12 @@ export default function CommunityConnection({project, ...props}) {
   return (
     <Container>
       <Grid container spacing={4} rowSpacing={{xs:3, lg:10}} justifyContent="center" alignItems="flex-start">
+        <Grid item xs={12} component="img" src={community} className="card-image"/>
         <Grid item component="p" xs={12}>
               Integrity is the foundation of mastery. Don't eat baubles when you could eat brains. From the light emanates all sorts of no-see-ums. Best to keep away. Cougars make the best pets, under certain circumstances. If you have a need for a walk, go take it. Before it is too late. Marjoram is an herb that everyone has forgotten, but this means you must be careful; it is out there, quietly waiting and biding its time until we are caught unsuspecting and unawares. Be. Ware.
         </Grid>
+        <Grid item xs={12} component="img" src={mitigation} className="card-image"/>
+
         <Grid item component="p" xs={12}>
           The first written record of lead mining at Minera dates back to 1296, when Edward I of England hired miners from the site to work in his new mines in Devon. Not all of them vacated the area, however, as mining went on until the Black Death in 1349, when it ended.
         </Grid>
