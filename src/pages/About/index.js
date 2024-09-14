@@ -69,7 +69,10 @@ export default function About() {
                     Our approach to digital transformation advisory and impact project interweaves strategic thinking of IT infrastructure, tools and technologies alongside the advanced diverse skills needed.
                   </p>
                   <p>
-                    Our umbrella mandate is computing for good (C4G).  
+                    Our society purpose: An interdisciplinary organization devoted to applied research, education and capacity building associated with computational, and computing-for-good, approaches to contemporary applications in health, environment and the Arts & digital media. Goals include establishing sustainable practices for technical topics (e.g. architectures, scalability, algorithmic correctness, data sharing), evolving cross-sector and or cross-cultural frameworks for collaboration and storytelling, and innovating new models for learning.
+                  </p>
+                  <p>
+                  The Pacific Coastal Computing Association is devoted to ensuring that the maximum possible value of the financial contributions made go directly to supporting the students and communities that we serve. As such, we have a corporate policy that disallows the payment of overheads on money originating from PCCA.
                   </p>
               </Typography>
             </Box>
