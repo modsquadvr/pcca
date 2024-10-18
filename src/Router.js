@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import About from "./pages/About"
 import Projects from "./pages/Projects"
 import Podcasts from "./pages/Podcasts"
+import Mapping from "./pages/mapping"
 
 export default function App() {
   return (
