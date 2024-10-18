@@ -34,9 +34,9 @@ function Hero() {
   )
 }
 
-export default function About() {
+export default function Mapping() {
   return (
-    <BasePage className="mapping">
+    <BasePage className="Mapping">
       <Hero />
       <Container sx={{m:0, w:1, maxWidth:1}} className="infodump light about">
         <Grid container spacing={4} className="infodump-grid" direction="row">
