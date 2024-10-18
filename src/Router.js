@@ -23,6 +23,7 @@ export default function App() {
           <Route path="/projects" element={<Projects/>}/>
           <Route path="/podcasts" element={<Podcasts/>}/>
           <Route path="/contact" element={<Home/>}/>
+          <Route path="/mapping" element={<Mapping/>}/>
         </Routes>
       </div>
     </Router>
