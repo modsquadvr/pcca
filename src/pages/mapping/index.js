@@ -89,24 +89,24 @@ export default function Mapping() {
           >
           <Box className="blurb">
               <Typography variant="h4">
-                    Our HEART Focus
+                OTHER INDIGENOUS MAPPING INITIATIVES
               </Typography>
               <Typography variant="body-1">
-                  <p>
-                    H. Healthcare: health & wellbeing, esp. mental health.  
-                  </p>
-                  <p>
-                    E. Environment: sustainability and conservation. 
-                  </p>
-                  <p>
-                    A. The Arts: performing arts, interactive media and A&E. 
-                  </p>
-                  <p>
-                    R. Reconciliation: fostering harmony, diversity & inclusivity. 
-                  </p>
-                  <p>
-                    T. Technology: innovation, applied research, computing 4 good.
-                  </p>
+                <section>
+                  <ul>
+                    <li>
+                      <strong>Indigenous Mapping Collective - The Firelight Group</strong><br>
+                      <a href="https://www.indigenousmaps.com" target="_blank">www.indigenousmaps.com</a><br>
+                      <em>Providing Indigenous Peoples, Nations, and organizations with the tools and training to map their lands, share their stories, and decolonize place and space.</em><br>
+                      - Indigenous Mapping Collective Google Earth Map: 
+                      <a href="https://blog.google/intl/en-ca/products/explore-get-answers/indigenous-lands-in-canada-are-now-in/" target="_blank">Explore Indigenous Lands in Canada</a>
+                    </li>
+                    <li>
+                      <strong>Geographic Indigenous Futures Lab</strong><br>
+                      <a href="https://geographicindigenousfutures.ca/" target="_blank">https://geographicindigenousfutures.ca</a><br>
+                      <em>"At the heart of the GIF Lab’s mission is to bring control of geographic research back into the hands of communities."</em><br>
+                  </ul>
+                  </section>
               </Typography>
             </Box>
 
@@ -120,15 +120,77 @@ export default function Mapping() {
                 mr:0
               }}
               title="Powell River across the strait, taken by Andy Wynden"
-              alt="A calm seascape with smooth mottled grey rocks in the foreground. Across the water there are mountains in the far distance. The photograph is taken in the early evening, and there are wisps of clouds all across the sky in various shades of blue and grey, complementing the blues and grays of the rocks and the ocean. "
+              alt=""
+              src={ocean}
+            />
+          </Grid>
+        </Grid>
+      </Container> //second container
+
+      <Container sx={{m:0, w:1, maxWidth:1}} className="infodump light about">
+        <Grid container spacing={4} className="infodump-grid" direction="row">
+
+          <Grid item xs={12} md={6}>
+          <Box
+              component="img"
+              sx={{
+                maxWidth:"1",
+                maxHeight:"600px",
+                mr:0
+              }}
+              title="Powell River across the strait, taken by Andy Wynden"
+              alt=""
               src={ocean}
             />
 
 
           </Grid>
+          <Grid item 
+                xs={12} md={6} 
+                textAlign="left"
+          >
+            <Box className="blurb">
+              <Typography variant="h4">
+                    INDIGENOUS MAPS AND RESOURCES
+              </Typography>
+              <Typography variant="body-1">
+                <section>
+                  <ul>
+                    <li>
+                      <strong>First Nation Profiles Interactive Map</strong><br>
+                      Government of Canada: Crown-Indigenous Relations and Northern Affairs Canada<br>
+                      <a href="https://geo.sac-isc.gc.ca/cippn-fnpim/index-eng.html" target="_blank">
+                        https://geo.sac-isc.gc.ca/cippn-fnpim/index-eng.html
+                      </a><br>
+                      <em>The information contained in the Community Profiles is extracted from the authoritative source systems used for the ongoing operations of the [Crown-Indigenous Relations and Northern Affairs] department.</em>
+                    </li>
+                    <li>
+                      <strong>Indigenous Peoples and Lands - Statistics Maps</strong><br>
+                      <a href="https://www.rcaanc-cirnac.gc.ca/eng/1605796533652/1605796625692" target="_blank">
+                        https://www.rcaanc-cirnac.gc.ca/eng/1605796533652/1605796625692
+                      </a>
+                    </li>
+                    <li>
+                      <strong>Indigenous Peoples, Places & Maps</strong><br>
+                      Resource list compiled by Vancouver Island University<br>
+                      <a href="https://library.viu.ca/FNmap" target="_blank">https://library.viu.ca/FNmap</a>
+                    </li>
+                  </ul>
+                  </section>
+                  <section>
+                  <h3>Indigenous Mapping Articles</h3>
+                  <ul>
+                    <li>
+                      <strong>R. Rose-Redwood, N. Blu Barnd, A. H. Lucchesi, S. Dias, and W. Patrick</strong>, "Decolonizing the map: Recentering Indigenous mappings," <em>Cartographica</em>, vol. 55, no. 3, pp. 151–162, 2020, doi: <a href="https://doi.org/10.3138/cart.53.3.intro" target="_blank">10.3138/cart.53.3.intro</a>.
+                    </li>
+                  </ul>
+                </section>
+              </Typography>
+            </Box>
 
+          </Grid>
         </Grid>
-      </Container>
+      </Container> //Third Container
     </BasePage>
   );
 }
