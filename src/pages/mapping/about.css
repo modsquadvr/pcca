@@ -10,4 +10,21 @@
 
 .about .hero .title {
   padding: 2em;
+  color: black;
+}
+
+/* Specific to the .about class */
+a {
+  color: rgba(48, 48, 144, 0.777); /* Override link color within .about */
+  text-decoration: underline !important;
+}
+
+a:hover {
+  color: rgba(70, 70, 230, 0.777); /* Override hover color within .about */
+  text-decoration: underline !important;
+}
+
+a:visited {
+  color: rgba(41, 41, 227, 0.777); /* Override visited link color within .about */
+  text-decoration: underline !important;
 }
