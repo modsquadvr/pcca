@@ -125,7 +125,7 @@ export default function Mapping() {
             />
           </Grid>
         </Grid>
-      </Container> //second container
+      </Container>
 
       <Container sx={{m:0, w:1, maxWidth:1}} className="infodump light about">
         <Grid container spacing={4} className="infodump-grid" direction="row">
@@ -190,7 +190,7 @@ export default function Mapping() {
 
           </Grid>
         </Grid>
-      </Container> //Third Container
+      </Container>
     </BasePage>
   );
 }
