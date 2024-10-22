@@ -1,5 +1,5 @@
-// import * as React from 'react';
-import React, { useState } from 'react';
+import * as React from 'react';
+// import React, { useState } from 'react';
 
 
 import Container from '@mui/material/Container';
@@ -8,7 +8,7 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
-import PdfPopup from './PdfPopup.js';
+// import PdfPopup from './PdfPopup.js';
 
 import BasePage from "../BasePage"
 import { FadeRuleLight } from "components/FadeRule";
@@ -42,10 +42,10 @@ function Hero() {
 }
 
 export default function Mapping() {
-  const [openPdf, setOpenPdf] = useState(false);
+  // const [openPdf, setOpenPdf] = useState(false);
 
-  const handleOpenPdf = () => setOpenPdf(true);
-  const handleClosePdf = () => setOpenPdf(false);
+  // const handleOpenPdf = () => setOpenPdf(true);
+  // const handleClosePdf = () => setOpenPdf(false);
 
   return (
     <BasePage className="mapping">
@@ -101,7 +101,7 @@ export default function Mapping() {
                   sx={{ 
                   display:"flex",
                   alignItems:"center",
-                  textAlign: 'left', 
+                  textAlign: 'center', 
                   justifyContent: 'center',
                   height:"100%",
                   padding: '16px 16px',
@@ -110,8 +110,7 @@ export default function Mapping() {
                 }} 
                 color="#16597c"
               >
-              WORKSHOP SLIDES<br/>
-              <span style={{fontSize: "18px"}}>(coming soon)</span> 
+              <a href="https://drive.google.com/file/d/1x-s4IWhFHoa2OF69MH6OncK3smdrp5g6/view" target="_blank" rel="noopener noreferrer">WORKSHOP<br/>SLIDES</a>
             </Typography>
             </Box>
           </Grid>
@@ -139,7 +138,7 @@ export default function Mapping() {
           <Grid item xs={12} md={12}></Grid>
           <Box className="blurb">
           <Typography color="#16597c" sx={{ padding:4}}>
-          <a href="https://earth.google.com/earth/d/1mUrH2rxeoSVNLTZh-ho3SK92dcEfDBwn?usp=sharing"  target="_blank" rel="noopener noreferrer">Tech Tale Google Earth Map</a>
+          <a href="https://earth.google.com/earth/d/1mUrH2rxeoSVNLTZh-ho3SK92dcEfDBwn?usp=sharing" target="_blank" rel="noopener noreferrer">Tech Tale Google Earth Map</a>
             </Typography>
           </Box>
         
