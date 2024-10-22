@@ -59,7 +59,7 @@ export default function Mapping() {
             </Typography>
             <Typography variant="body1" component="div">
               <p>
-              The program started beginning of August, 2024 where scholars all over Canada (primarily Alberta and BC for this particular run) were brought together at UVIC by the Verna J. Kirkness Foundation. From here, we were assigned programs directed by different faculties or professionals. The program this project sprouted from was “Tech Talez”, which had the students enrolled in. 
+                The program started beginning of August, 2024 where scholars all over Canada (primarily Alberta and BC for this particular run) were brought together at UVIC by the Verna J. Kirkness Foundation. From here, we were assigned programs directed by different faculties or professionals. The program this project sprouted from was “Tech Talez”, which had the students enrolled in. 
               </p>
               <p>
                 Being introduced to many different resources and potential avenues, given plenty of free reign by such encouraging and supportive mentors, the project we eventually came to develop involved mapping the bands of all our students. From here, we would go about using Google My Maps as our bones to compile all the information we would then transfer into Google Earth as a presentation. Over the course of the week til the very end, we interviewed scholars on their traditional territory and knowledge, proceeding with continued research after the fact to contribute more accurate information with interest, then plot and manually outline the bands while also exploring more technical tools. 
@@ -78,19 +78,20 @@ export default function Mapping() {
             <Typography 
                   variant="h4" 
                   sx={{ 
-                  display:"flex",
-                  alignItems:"center",
-                  textAlign: 'left', 
-                  justifyContent: 'center',
-                  height:"100%",
-                  padding: '16px 16px',
-                  fontWeight: "bold",
-                  border: "1px solid black"
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    textAlign: "center",
+                    height: "100%",
+                    padding: "16px",
+                    fontWeight: "bold",
+                    border: "1px solid black",
+                    maxWidth: "100%", // Ensure it doesn't exceed the container
+                    wordWrap: "break-word" // Allow words to break
                 }} 
                 color="#16597c"
               >
-              WORKSHOP RECORDING<br/>
-              <span style={{fontSize: "18px"}}>(coming soon)</span> 
+              WORKSHOP<br/>RECORDING (TBA)
             </Typography>
             </Box>
           </Grid>
@@ -164,7 +165,7 @@ export default function Mapping() {
                       </li></ul>
                     </p>
                     <p>
-                      <a href="https://geographicindigenousfutures.ca/" target="_blank" rel="noopener noreferrer"><strong>Geographic Indigenous Futures Lab</strong></a><br />
+                      <a href="https://geographicindigenousfutures.ca/" target="_blank" rel="noopener noreferrer"><strong>Geographic Indigenous Futures Lab - Department of Geography, University of Victoria</strong></a><br />
                       <em>"At the heart of the GIF Lab’s mission is to bring control of geographic research back into the hands of communities."</em>
                     </p>
                 </section>
@@ -248,31 +249,38 @@ export default function Mapping() {
               <section>
                   <h3>Mapping Software</h3>
                   <p>
-                    ESRI
+                    <a href="https://www.esri.com/en-us/home" target="_blank" rel="noopener noreferrer"><strong>Esri</strong></a><br/>
+                    GIS software that offers mapping and spatial analysis tools commonly used in various fields.
                   </p>
                   <p>
-                    QGIS
+                    <a href="https://qgis.org" target="_blank" rel="noopener noreferrer"><strong>QGIS</strong></a><br/>
+                    An open-source GIS application with tools for creating, editing, and analyzing maps.
                   </p>
                 </section>
                 <section>
                   <h3>Mapping Platforms</h3>
                   <p>
-                    Google My Maps
+                    <a href="https://www.google.com/maps/about/mymaps/" target="_blank" rel="noopener noreferrer"><strong>Google My Maps</strong></a><br/>
+                    A web-based mapping tool that allows users to create and share maps.
                     </p>
                     <p>
-                      Google Earth
+                      <a href="https://www.google.ca/earth/" target="_blank" rel="noopener noreferrer"><strong>Google Earth</strong></a><br/>
+                      A virtual globe and map application that provides detailed satellite imagery, maps, and 3D terrain.
                     </p>
                     <p>
-                      OSM
+                      <a href="https://www.openstreetmap.org/" target="_blank" rel="noopener noreferrer"><strong>OpenStreetMap (OSM)</strong></a><br/>
+                      A collaborative map project where users can edit and update geographic data.
                     </p>
                 </section>
                 <section>
                   <h3>Web Mapping Tools</h3>
                   <p>
-                    Leaflet
+                    <a href="https://leafletjs.com" target="_blank" rel="noopener noreferrer"><strong>Leaflet</strong></a><br/>
+                    A JavaScript library for creating interactive maps.
                   </p>
                   <p>
-                    Mapbox
+                    <a href="https://www.mapbox.com" target="_blank" rel="noopener noreferrer"><strong>Mapbox</strong></a><br/>
+                    A platform for creating customizable maps and location-based applications.
                   </p>
                 </section>
               </Typography>
@@ -301,7 +309,8 @@ export default function Mapping() {
         </Typography>
         <Grid container spacing={4} className="infodump-grid" direction="row" justifyContent="space-between" alignItems="center">
           <Grid item xs={12} md={3}>
-            <Box
+          <a href="https://vernajkirkness.org" target="_blank" rel="noopener noreferrer">
+          <Box
               component="img"
               sx={{
                 maxWidth: "1",
@@ -312,8 +321,10 @@ export default function Mapping() {
               alt="Verna J. Kirkness Foundation Logo"
               src={VJKFLogo}
             />
+            </a>
           </Grid>
           <Grid item xs={12} md={3}>
+          <a href="https://www.northeastern.edu" target="_blank" rel="noopener noreferrer">
             <Box
               component="img"
               sx={{
@@ -325,8 +336,10 @@ export default function Mapping() {
               alt="Northeastern University Logo"
               src={NELogo}
             />
+            </a>
           </Grid>
           <Grid item xs={12} md={3}>
+          <a href="https://www.uvic.ca" target="_blank" rel="noopener noreferrer">
             <Box
               component="img"
               sx={{
@@ -338,8 +351,10 @@ export default function Mapping() {
               alt="University of Victoria Logo"
               src={UVicLogo}
             />
+            </a>
           </Grid>
           <Grid item xs={12} md={3}>
+          <a href="https://coastalcomputing.ca" target="_blank" rel="noopener noreferrer">
             <Box
               component="img"
               sx={{
@@ -351,6 +366,7 @@ export default function Mapping() {
               alt="Pacific Coastal Computing Association Logo"
               src={PCCA_Logo}
             />
+            </a>
           </Grid>
         </Grid>
       </Container> {/* End of PARTNERS Container */}
