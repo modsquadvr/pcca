@@ -91,7 +91,7 @@ export default function Mapping() {
                 }} 
                 color="#16597c"
               >
-              WORKSHOP<br/>RECORDING (TBA)
+              <a href="https://vimeo.com/1022245721?share=copy" target="_blank" rel="noopener noreferrer">WORKSHOP<br/>RECORDING</a>
             </Typography>
             </Box>
           </Grid>
