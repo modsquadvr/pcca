@@ -13,7 +13,7 @@ import { useTheme } from '@mui/material/styles';
 import BasePage from "../BasePage"
 import { FadeRuleLight } from "components/FadeRule";
 
-import "./about.css"
+import "./mapping.css"
 import ocean from 'assets/photos/ocean-1920x1280.png';
 import VJKFLogo from 'assets/photos/projects/TechTalez/VJKF_Logo.png';
 import UVicLogo from 'assets/photos/projects/TechTalez/UVicLogo.png';
