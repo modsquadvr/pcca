@@ -9,7 +9,7 @@ import About from "./pages/About"
 import Projects from "./pages/Projects"
 import Podcasts from "./pages/Podcasts"
 import Mapping from "./pages/mapping"
-
+import Hackathon from "./pages/hackathon"
 export default function App() {
   return (
     <Router>
@@ -25,6 +25,7 @@ export default function App() {
           <Route path="/podcasts" element={<Podcasts/>}/>
           <Route path="/contact" element={<Home/>}/>
           <Route path="/mapping" element={<Mapping/>}/>
+          <Route path="/hackathon" element={<Hackathon/>}/>
         </Routes>
       </div>
     </Router>
