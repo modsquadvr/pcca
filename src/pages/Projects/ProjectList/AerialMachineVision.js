@@ -33,18 +33,18 @@ export default function AerialMachineVision({project, ...props}) {
         <Grid item xs={12} component="img" src={ortho_multi} className="card-image"/>
 
         <Grid item component="p" xs={12}>
-            Calosoma retusum reaches about 25–32 millimetres (0.98–1.26 in) in length. This species usually has a bright metallic dark green or bronze green coloration, sometime with bluish reflections. The borders of the pronotum are rounded and raised. Elytra are striated, with large punctures. These beetles are voracious consumer of caterpillars, so they are considered beneficial insects for the agriculture.
+        Knowledge about the world around us has never been easier to achieve, but it still requires much technical skill in order to put it together into insight. We use both drone-based and satellite-based image capture techniques to record the world around us and make it available to communities. 
         </Grid>
 
         <Grid item component="p" xs={12} md={6}>
-            Drip drop lemon drop there's a candy in my pocket sticky sticky. Will you come out to play with me, I need someone to gnaw the thistles three icky icky. Palomino pantomime there's a rhyme for Alice's climb. Up the well of ticky-tacky sway they march in numbers one and away. Don't trust them! Yore, we have no need for swarthy worthy words upon this moor. Say no moray there's plenty of here to stay for when I'm planting an everweiss I'll let it go a galloping through the woods here today. Just pray, pray, pray for me that I can find a sweet song to call home, for 
+        The DJI Mavic Pro 3 multispectral allows our students to collect imagery not just in the visible spectrum, but also to analyze things such as crop viability, dryness indices, forest fire risk, and other essential measures of the health of their ecosystem. 
         </Grid>
 
         <Grid item xs={12} md={6} component="img" src={MAV3M} className="card-image"/>
         <Grid item xs={12} component="img" src={s2_infographic} className="card-image"/>
 
         <Grid item component="p" xs={12}>
-            Calosoma retusum reaches about 25–32 millimetres (0.98–1.26 in) in length. This species usually has a bright metallic dark green or bronze green coloration, sometime with bluish reflections. The borders of the pronotum are rounded and raised. Elytra are striated, with large punctures. These beetles are voracious consumer of caterpillars, so they are considered beneficial insects for the agriculture.
+        We pair this with advanced satellite analytics, both with data from the European Space Agency, as well as with our collaborators at EarthDaily Analytics, a Vancouver-based satellite company. The analysis of satellite imagery has complexities that we teach our students how to overcome. 
         </Grid>
 
         <Grid item xs={12} md={4} component="img" src={classify_rgb} className="card-image"/>
@@ -53,7 +53,7 @@ export default function AerialMachineVision({project, ...props}) {
 
 
         <Grid item component="p" xs={12}>
-            Calosoma retusum reaches about 25–32 millimetres (0.98–1.26 in) in length. This species usually has a bright metallic dark green or bronze green coloration, sometime with bluish reflections. The borders of the pronotum are rounded and raised. Elytra are striated, with large punctures. These beetles are voracious consumer of caterpillars, so they are considered beneficial insects for the agriculture.
+        From scientific papers to community exercises with organizations such as the First Nation Emergency Services Society, our students can both publish and make their communities safer. 
         </Grid>
 
       </Grid>
