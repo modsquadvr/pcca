@@ -8,6 +8,7 @@ import ForestFireMitigation from './ForestFireMitigation';
 import CommunityConnection from './CommunityConnection';
 import HealthCareUnburdened from './HealthCareUnburdened';
 import CulturallyAwareAI from './CulturallyAwareAI';
+import CitizenScience from './CitizenScience';
 
 
 import forest from 'assets/photos/card-thumbs-200x200/forest.png';
@@ -110,6 +111,15 @@ const ProjectList = [
     alt:"",
     urlSlug:"culturally-aware-ai",
     component:CulturallyAwareAI
+  },
+  {
+    key: 11,
+    title:"Citizen Science",
+    fullTitle:"Citizen Science",
+    img:imagerecognition,
+    alt:"",
+    urlSlug:"citizen-science",
+    component:CitizenScience
   }
 ]
 
