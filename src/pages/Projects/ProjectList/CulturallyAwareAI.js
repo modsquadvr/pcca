@@ -3,14 +3,15 @@ import * as React from 'react';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
+import Box from '@mui/material/Box';
 // eslint-disable-next-line
 import Link from '@mui/material/Link';
 
 // eslint-disable-next-line
 import { FadeRuleLight, FadeRuleDark } from "components/FadeRule";
 
-// Using image-recognition as a placeholder - you may want to replace with a more appropriate image
-import imagerecognition from "assets/photos/card-thumbs-200x200/image-recognition.png"
+// Import the PDF file
+import culturallyAwarePDF from "assets/photos/projects/culturallyawareai/Certificate of Completion Culturally Aware AI.pdf";
 
 export default function CulturallyAwareAI({project, ...props}) {
 
@@ -18,7 +19,17 @@ export default function CulturallyAwareAI({project, ...props}) {
     <Container>
       <Grid container spacing={4} rowSpacing={{xs:3, lg:10}} justifyContent="center" alignItems="flex-start">
 
-        <Grid item xs={12} component="img" src={imagerecognition} className="card-image"/>
+        <Grid item xs={12}>
+          <Box sx={{ width: '100%', height: '500px', overflow: 'hidden' }}>
+            <embed
+              src={culturallyAwarePDF}
+              type="application/pdf"
+              width="100%"
+              height="100%"
+              className="card-image"
+            />
+          </Box>
+        </Grid>
 
         <Grid item component="p" xs={12}>
         Our Culturally Aware AI initiative focuses on developing artificial intelligence systems that respect and incorporate diverse cultural perspectives, values, and knowledge systems. We work with Indigenous communities and other cultural groups to ensure AI technologies are developed with cultural sensitivity and awareness.
