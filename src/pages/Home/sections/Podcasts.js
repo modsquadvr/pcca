@@ -35,7 +35,7 @@ export default function Podcasts() {
             </Typography>
             <Typography variant="body-1">
                 <p>
-                  The Pacific Coastal Computing Association (PCCA) incorporated in 2020 as a non-profit based in Vancouver, B.C., Canada. PCCA works with partners to promote innovation, diversity & inclusivity in capacity building and positive change in education, the arts, environment, health & wellness and technology. 
+                  The Pacific Coastal Computing Association (PCCA) incorporated in 2020 as a non-profit based in Victoria, B.C., Canada. PCCA works with partners to promote innovation, diversity & inclusivity in capacity building and positive change in education, the arts, environment, health & wellness and technology. 
                 </p>
                 <p>
                   Our approach to digital transformation advisory and impact projects interweaves strategic thinking of IT infrastructure, tools and technologies alongside the advanced diverse skills needed. 
