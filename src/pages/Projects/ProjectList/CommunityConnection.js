@@ -25,7 +25,7 @@ export default function CommunityConnection({project, ...props}) {
         In each of these communities, there are fundamental problems to be resolved and technologies to be applied to those solutions. We make the technologies as easy as possible while still allowing our community collaborators to determine what solutions they want to pursue. 
         </Grid>
         <Grid item component="p" xs={12}>
-        In some cases, these solutions require programming and will teach basic programming concepts. In others, they'll require using different software packages, and we teach those software packages. In all of them, though, there is a balance between the technical training we provide and the community solutions that we solve. 
+        In some cases, these solutions require programming and will teach basic programming concepts. In others, they'll require using different software packages, and we teach those software packages. In all of them, though, there is a balance between the technical training we provide and the community solutions that we support. 
         </Grid>
         <Grid item component="p" xs={12}>
         We are always looking for new communities to work with. If you are interested in working with us, please reach out to us.

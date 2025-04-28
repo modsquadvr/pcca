@@ -45,7 +45,7 @@ export default function KelpFarming({project, ...props}) {
 
         <Grid item xs={12} md={6}>
           <Typography component="h5" variant="h5" textAlign="center">
-            <Link href="https://im4lab.com/virtualproduction" target="_blank" rel="noopener noreferrer" >Visit the Project Website</Link>
+           
           </Typography>
         </Grid>
 
