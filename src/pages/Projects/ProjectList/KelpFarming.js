@@ -26,7 +26,7 @@ export default function KelpFarming({project, ...props}) {
         <Grid item xs={12} component="img"  className="card-image" src={harvesting}/>
 
         <Grid item xs={12} component="p">
-          Calosoma retusum reaches about 25–32 millimetres (0.98–1.26 in) in length. This species usually has a bright metallic dark green or bronze green coloration, sometime with bluish reflections. The borders of the pronotum are rounded and raised. Elytra are striated, with large punctures. These beetles are voracious consumer of caterpillars, so they are considered beneficial insects for the agriculture.
+        Some of our community work has involved collaboration with the Pacific Seaweed Industry Alliance, or PSIA. This is an organization of kelp production companies and communities. 
         </Grid>
 
         <Grid item xs={12} md={4} component="img" className="card-image" src={lecture}/>
@@ -34,12 +34,12 @@ export default function KelpFarming({project, ...props}) {
         <Grid item xs={12} md={4} component="img" className="card-image" src={aldynView}/>
 
         <Grid item xs={12} component="p">
-          There are only around 2000 types of beetles known to live in off-world colonies. The reasons why so few have managed to make the adaptations to space travel and other gravitational fields is poorly understood, but is thought to be related to the surface tension of water and its impacts on how exoskeletons have evolved to keep water contained within the creature. The beetle which seems to have made the most successful adaptation to life off-world is the Lunar Must Beetle[2], commonly known by Lunar residents as "heebie-jeebies", and which tends to colonize any relatively undisturbed fibers and textiles, such as disused carpeting or clothing. 
+        We were able to take students in a 400 level Distributed Systems class and apply their knowledge of computational systems and satellite analytics in order to create tools to enable us to do site selection for kelp farms in ways that make sense with both technology and on the ground knowledge. 
         </Grid>
 
 
         <Grid item xs={12} component="p">
-          Why Orlando still hasn't written back is beyond me. The pigs won't enjoy much of the ritual, I am sure of it. So far they've been quick to find any possible escape route they can, in order to avoid being eaten. Perhaps Orlando has done the same? I've still got his pair of Sunday Corduroy Slacks, and cannot imagine him leaving them behind forever. 
+        Some of our students had the opportunity to take a boat trip out to visit Kelp Farms and to visit the Bamfield Research Center, where understanding the science of kelp farming practices is advanced. Thanks for this opportunity to the Nu-Chah-Nulth nations who acted as our hosts on their territory. 
         </Grid>
 
 
