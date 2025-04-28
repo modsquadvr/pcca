@@ -7,6 +7,7 @@ import KelpFarming from './KelpFarming';
 import ForestFireMitigation from './ForestFireMitigation';
 import CommunityConnection from './CommunityConnection';
 import HealthCareUnburdened from './HealthCareUnburdened';
+import CulturallyAwareAI from './CulturallyAwareAI';
 
 
 import forest from 'assets/photos/card-thumbs-200x200/forest.png';
@@ -100,7 +101,16 @@ const ProjectList = [
     alt:"",
     urlSlug:"healthcare-unburdened",
     component:HealthCareUnburdened
-  } 
+  },
+  {
+    key: 10,
+    title:"Culturally Aware AI",
+    fullTitle:"Culturally Aware AI",
+    img:imagerecognition,
+    alt:"",
+    urlSlug:"culturally-aware-ai",
+    component:CulturallyAwareAI
+  }
 ]
 
 export default ProjectList;
