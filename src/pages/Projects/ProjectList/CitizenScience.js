@@ -32,7 +32,7 @@ export default function CitizenScience({project, ...props}) {
         </Grid>
 
         <Grid item component="p" xs={12}>
-        Our Citizen Science initiative empowers communities to participate directly in scientific research and data collection. By engaging non-professional scientists in the research process, we bridge the gap between academic research and public participation, creating more inclusive and comprehensive scientific outcomes.
+        Our Citizen Science initiative empowers communities to participate directly in scientific research and data collection. By engaging non-professional scientists in the research process, we bridge the gap between academic research and public participation, creating more inclusive and comprehensive scientific outcomes. This UNITAR-accredited course has been offered to both Indigenous and non-Indigenous students and offers training in both the technical aspects of web mapping and the environmental and social aspects of citizen science.
         </Grid>
 
         <Grid item component="p" xs={12}>

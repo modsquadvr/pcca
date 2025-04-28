@@ -32,7 +32,7 @@ export default function CulturallyAwareAI({project, ...props}) {
         </Grid>
 
         <Grid item component="p" xs={12}>
-        Our Culturally Aware AI initiative focuses on developing artificial intelligence systems that respect and incorporate diverse cultural perspectives, values, and knowledge systems. We work with Indigenous communities and other cultural groups to ensure AI technologies are developed with cultural sensitivity and awareness.
+        Our Culturally Aware AI initiative focuses on developing artificial intelligence systems that respect and incorporate diverse cultural perspectives, values, and knowledge systems. We work with Indigenous communities and other cultural groups to ensure AI technologies are developed with cultural sensitivity and awareness. This course has been accredited by the United Nations Institute for Training and Research (UNITAR) and has been offered to both Indigenous and non-Indigenous students. 
         </Grid>
 
         <Grid item component="p" xs={12}>
