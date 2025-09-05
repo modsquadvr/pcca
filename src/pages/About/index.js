@@ -290,8 +290,7 @@ export default function About() {
                 </Typography>
                 <Box component="address" sx={{ mb: 3 }}>
                   <Typography variant="body1">
-                    Email: <a href="mailto:privacy@coastalcomputing.ca">privacy@coastalcomputing.ca</a><br />
-                    (If you prefer, contact us through the website form and address your message to "Privacy Officer".)
+                    Email: <a href="mailto:privacy@coastalcomputing.ca">privacy@coastalcomputing.ca</a>
                   </Typography>
                 </Box>
               </section>
