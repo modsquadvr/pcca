@@ -138,19 +138,17 @@ export default function About() {
                 <Typography variant="h4" id="pcca-privacy-policy-title" sx={{ mb: 2 }}>
                   Privacy, Information & Data Protection Policy
                 </Typography>
-                <Typography variant="body1" sx={{ fontWeight: 'bold', mb: 1 }}>
-                  Organization: Pacific Coastal Computing Association (PCCA)
-                </Typography>
                 <Typography variant="body1" sx={{ fontWeight: 'bold', mb: 2 }}>
-                  Effective date: September 5, 2025
+                  Organization: Pacific Coastal Computing Association (PCCA)
                 </Typography>
                 <Box 
                   className="policy-statement" 
                   sx={{ 
                     padding: '.75rem 1rem',
                     borderLeft: '4px solid #0b62b3',
-                    background: '#f4f8fc',
-                    mb: 3
+                    background: 'rgba(11, 98, 179, 0.08)',
+                    mb: 3,
+                    borderRadius: '4px'
                   }}
                 >
                   <Typography variant="body1">
