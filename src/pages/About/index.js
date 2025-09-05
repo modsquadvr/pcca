@@ -135,10 +135,10 @@ export default function About() {
           <Grid item xs={12}>
             <section id="pcca-privacy-policy" aria-labelledby="pcca-privacy-policy-title">
               <header>
-                <Typography variant="h4" id="pcca-privacy-policy-title" sx={{ mb: 2 }}>
+                <Typography variant="h4" id="pcca-privacy-policy-title" sx={{ mb: 2, color: '#282c34' }}>
                   Privacy, Information & Data Protection Policy
                 </Typography>
-                <Typography variant="body1" sx={{ fontWeight: 'bold', mb: 2 }}>
+                <Typography variant="body1" sx={{ fontWeight: 'bold', mb: 2, color: '#282c34' }}>
                   Organization: Pacific Coastal Computing Association (PCCA)
                 </Typography>
                 <Box 
@@ -151,7 +151,7 @@ export default function About() {
                     borderRadius: '4px'
                   }}
                 >
-                  <Typography variant="body1">
+                  <Typography variant="body1" sx={{ color: '#282c34' }}>
                     <strong>Policy Statement:</strong> PCCA maintains an established and published policy to protect
                     small and medium-sized enterprises' (SMEs') privacy, information, and data. This page constitutes that policy.
                   </Typography>
